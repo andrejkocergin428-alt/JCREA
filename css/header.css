@@ -1,0 +1,187 @@
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  color: var(--color-white);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 86px;
+  background-color: var(--color-black);
+  border-radius: 60px;
+  z-index: 10;
+  padding: 0 10px;
+}
+
+
+.header-form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 10
+}
+
+.header-logo:hover .header-logo__hover {
+  opacity: 1;
+}
+
+.header-logo:hover .header-logo__inscription {
+  opacity: 0;
+}
+
+.header-logo__hover {
+  display: flex;
+  flex-direction: column;
+  right: 44%;
+  position: absolute;
+  opacity: 0;
+  transition: 0.3s all;
+}
+
+.header-checked {
+  transition: 0.3s all;
+
+  cursor: pointer;
+}
+
+.header-checked input {
+  display: none;
+}
+
+.header-checked--active {
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  padding: 20px 40px;
+  transition: 0.5s all;
+}
+
+.header-checked input:checked+.header-checked--active {
+  border: 1px solid var(--color-main);
+  background-color: var(--color-main);
+}
+
+.header-checked:hover {
+  border: 0 solid var(--color-main);
+  background-color: #2C2C2C;
+  padding: 26px 0;
+  border-radius: 50px;
+
+}
+
+.header-burger__line {
+  border: 1px solid var(--color-white);
+  width: 25px;
+  z-index: 10
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px 20px 20px;
+  }
+
+  .header {
+    height: 60px;
+    padding: 0 10px;
+  }
+
+  .header-logo img {
+    width: 50px;
+    height: 50px;
+    gap: 5px;
+  }
+
+  .header-checked--active {
+    padding: 5px 10px;
+  }
+
+  .header-logo:hover .header-logo__inscription {
+    opacity: 1;
+  }
+
+  .header-checked:hover {
+    background-color: initial;
+    transition: none;
+    padding: 0;
+  }
+
+  .header-logo__hover {
+    animation: inscription 8s linear infinite;
+    color: var(--color-white);
+    position: absolute;
+    transition: 0.3s all;
+  }
+}
+
+@media (max-width: 500px) {
+  .header-form {
+    padding: 5px 16px 5px 5px;
+  }
+
+  .header-form__checked {
+    display: none;
+  }
+
+  .header-logo img {
+    width: 40px;
+    height: 40px;
+    gap: 5px;
+  }
+
+  .header-logo__hover {
+    right: 53%;
+    animation: inscription-secondary 8s linear infinite;
+    transition: 0.3s all;
+  }
+
+  .header-logo__inscription {
+    animation: inscription-primary 8s linear infinite;
+    transition: 0.3s all;
+  }
+}
+
+@keyframes inscription-secondary {
+
+  0%,
+  25% {
+    opacity: 0;
+  }
+
+  50%,
+  75% {
+    opacity: 1;
+  }
+
+  85%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes inscription-primary {
+
+  0%,
+  15% {
+    opacity: 1;
+  }
+
+  25%,
+  85% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

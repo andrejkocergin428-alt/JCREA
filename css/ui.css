@@ -1,0 +1,93 @@
+.ui-burger__line {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.ui-burger input {
+  display: none;
+}
+
+.ui-burger {
+  display: none;
+}
+
+.ui-burger__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  background-color: var(--color-black);
+  border-radius: 0 0 25px 25px;
+  transition: 0.5s all;
+  overflow: hidden;
+  top: 50%;
+  right: 50%;
+  width: 100.3%;
+  transform: translateX(50%);
+  gap: 8px;
+  opacity: 0;
+  padding: 40px;
+  z-index: 1;
+
+}
+
+.ui-burger input:checked~.ui-burger__box {
+  opacity: 1;
+}
+
+.ui-button {
+  cursor: pointer;
+  width: max-content;
+  max-height: max-content;
+  background-color: var(--color-main);
+  color: var(--color-white);
+  padding: 20px 40px;
+  border: 1px solid transparent;
+  border-radius: 60px;
+  transition: 0.3s all;
+}
+
+.ui-button:hover {
+  transform: scale(1.1);
+}
+
+.ui-pagination {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.ui-bullet__active {
+  cursor: pointer;
+  border: solid transparent;
+  color: var(--color-pagination-bullet);
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: var(--color-pagination-bullet);
+  transition: 0.4s all;
+}
+
+.ui-pagination input {
+  display: none;
+}
+
+.ui-bullet input:checked+.ui-bullet__active {
+  width: 60px;
+  background-color: var(--color-main);
+  border-radius: 10px;
+}
+
+.pagination--portfolio {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 500px) {
+  .ui-burger {
+    display: block;
+  }
+}

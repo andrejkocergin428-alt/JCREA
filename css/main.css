@@ -1,0 +1,173 @@
+.section-main__title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section-main__greetings {
+  border: 1px solid var(--color-black);
+  border-radius: 50px;
+  padding: 10px 20px;
+}
+
+.main-title__name {
+  color: var(--color-main)
+}
+
+.section-main__eyelashes--up {
+  position: absolute;
+  right: 45%;
+  top: 208px;
+}
+
+.section-main__eyelashes--down {
+  position: absolute;
+  left: 22%;
+  top: 470px;
+}
+
+.section-main__woman {
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section-main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.main-product__quote--up {
+  margin-bottom: 20px;
+}
+
+.section-main__product {
+  width: 400px;
+}
+
+.section-main__experince {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-main__description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.section-main__experince img {
+  margin-bottom: 20px;
+}
+
+.section-main__button {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: max-content;
+  height: 80px;
+  color: var(--color-white);
+  backdrop-filter: blur(4px);
+  border: 1px solid var(--color-white);
+  border-radius: 50px;
+  padding: 14px;
+  bottom: -80px;
+  gap: 10px;
+  z-index: 1;
+}
+
+.section-main__button img {
+  display: none;
+}
+
+.main-button__portfolio {
+  transition: 0.5s all;
+}
+
+.main-button__portfolio:hover {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  border: 1px solid var(--color-main);
+  background-color: var(--color-main);
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.main-button__portfolio:hover img {
+  width: 34px;
+  height: 34px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .section-main__eyelashes--down {
+    display: none;
+  }
+
+  .section-main__eyelashes--up {
+    display: none;
+  }
+
+  .section-main {
+    height: 100%;
+    padding: 100px 0 100px 0;
+  }
+
+  .section-main__woman {
+    bottom: 0;
+    width: 100%;
+  }
+
+  .section-main__button {
+    bottom: -380px;
+  }
+}
+
+@media (max-width: 500px) {
+  .section-main__title {
+    text-align: center;
+  }
+
+  .section-main {
+    padding-bottom: 20px;
+  }
+
+  .section-main__product {
+    width: 150px;
+  }
+
+  .section-main__woman {
+    bottom: 0;
+    width: 100%;
+  }
+
+  .section-main__button {
+    bottom: 0;
+  }
+
+  .section-main__button {
+    width: 200px;
+    height: 70px;
+    bottom: -140px;
+  }
+
+  .main-button__portfolio:hover {
+    padding: 5px;
+  }
+
+  .main-button__portfolio:hover img {
+    width: 30px;
+    height: 30px;
+  }
+
+}

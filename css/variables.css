@@ -1,0 +1,15 @@
+:root {
+
+  /* color */
+  --color-white: #ffffff;
+  --color-black: #171717;
+  --color-main: #FD853A;
+  --color-background-section: #F2F4F7;
+  --color-cards: #68686833;
+  --color-cards-border: gray;
+  --color-pagination-bullet: #E4E7EC;
+  --color-description: #98A2B3;
+  --color-hire-projects: #667085;
+  --color-lorem-card: #d1d1a0;
+  --color-portfolio-footer: #344054;
+}

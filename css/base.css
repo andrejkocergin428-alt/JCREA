@@ -1,0 +1,41 @@
+.container-main {
+  min-height: 150vh;
+}
+
+.container {
+  width: 100%;
+  position: relative;
+  padding: 0 80px;
+}
+
+.container--header {
+  position: fixed;
+  top: 20px;
+}
+
+.lorem {
+  width: 500px;
+}
+
+@media (max-width: 768px) {
+  .container-main {
+    padding: 0 20px;
+    min-height: 100vh;
+  }
+
+  .lorem {
+    width: 100%;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .container-main {
+    min-height: 130vh;
+  }
+
+}
