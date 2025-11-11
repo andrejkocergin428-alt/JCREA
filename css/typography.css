@@ -22,7 +22,7 @@
   --font-size-i2: 24px;
   --font-size-i3: 20px;
   --font-size-i4: 18px;
-  --font-size-i4: 16px;
+  --font-size-i5: 16px;
 
 
   --font-size-h1-m: 70px;
@@ -36,7 +36,7 @@
   --font-size-i2-m: 18px;
   --font-size-i3-m: 16px;
   --font-size-i4-m: 15px;
-  --font-size-i4-m: 14px;
+  --font-size-i5-m: 14px;
 
   /* font-weight; */
   --font-weight-l: 300;
@@ -166,6 +166,43 @@
   font-family: var(--font-family-lufga);
 }
 
+.i2-b-u {
+  font-size: var(--font-size-i2);
+  font-weight: var(--font-weight-b);
+  font-family: var(--font-family-urbanist);
+}
+
+.i4-r-u {
+  font-size: var(--font-size-i4);
+  font-weight: var(--font-weight-r);
+  font-family: var(--font-family-urbanist);
+}
+
+.i3-m-u {
+  font-size: var(--font-size-i3);
+  font-weight: var(--font-weight-m);
+  font-family: var(--font-family-urbanist);
+}
+
+.s1-r-l {
+  font-size: var(--font-size-s1);
+  font-weight: var(--font-weight-r);
+  font-family: var(--font-family-lufga);
+}
+
+.i3-s-l {
+  font-size: var(--font-size-i3);
+  font-weight: var(--font-weight-s);
+  font-family: var(--font-family-lufga);
+}
+
+.i5-r-l {
+  font-size: var(--font-size-i5);
+  font-weight: var(--font-weight-r);
+  font-family: var(--font-family-lufga);
+}
+
+
 
 
 @media (max-width: 768px) {
@@ -177,7 +214,8 @@
     font-size: var(--font-size-i3-m);
   }
 
-  .i4-r-l {
+  .i4-r-l,
+  .i4-r-u {
     font-size: var(--font-size-i4-m);
   }
 
@@ -187,7 +225,8 @@
 
   .s1-b-u,
   .s1-m-l,
-  .s1-b-l {
+  .s1-b-l,
+  .s1-r-l {
     font-size: var(--font-size-s1-m);
   }
 
@@ -210,7 +249,8 @@
     font-size: var(--font-size-s2-m);
   }
 
-  .i2-r-l {
+  .i2-r-l,
+  .i2-b-u {
     font-size: var(--font-size-i2-m);
   }
 

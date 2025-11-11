@@ -15,6 +15,11 @@
 		<link rel="stylesheet" href="./css/experince.css" />
 		<link rel="stylesheet" href="./css/hire.css" />
 		<link rel="stylesheet" href="./css/portfolio.css" />
+		<link rel="stylesheet" href="./css/results.css" />
+		<link rel="stylesheet" href="./css/discuss.css" />
+		<link rel="stylesheet" href="./css/dashboard.css" />
+		<link rel="stylesheet" href="./css/post.css" />
+		<link rel="stylesheet" href="./css/footer.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -31,22 +36,24 @@
 		<header class="container container--header">
 			<div class="header">
 				<form class="header-form">
-					<div class="header-form__checked">
+					<div class="header-form__buttons">
 						<label class="header-checked"
-							><input type="radio" name="navigation-header" value="" checked /><span
-								class="header-checked--active i3-r-l"
+							><input type="radio" name="navigation-header" value="" checked aria-label="home" /><span
+								class="header-checked__button i3-r-l"
 								>Home</span
 							></label
 						>
 
 						<label class="header-checked"
-							><input type="radio" name="navigation-header" /><span class="header-checked--active i3-r-l"
+							><input type="radio" name="navigation-header" aria-label="about" /><span
+								class="header-checked__button i3-r-l"
 								>About</span
 							></label
 						>
 
 						<label class="header-checked"
-							><input type="radio" name="navigation-header" /><span class="header-checked--active i3-r-l"
+							><input type="radio" name="navigation-header" aria-label="service" /><span
+								class="header-checked__button i3-r-l"
 								>Service</span
 							></label
 						>
@@ -55,67 +62,74 @@
 					<div class="header-logo">
 						<img src="/images/icons/logo.svg" alt="logo" />
 						<div class="header-logo__hover">
-							<p class="header-logo__hover--primary i4-r-l">Made by</p>
-							<p class="header-logo__hover--secondary i3-m-l">Jayesh Patil</p>
+							<p class="i4-r-l">Made by</p>
+							<p class="i3-m-l">Jayesh Patil</p>
 						</div>
 
 						<img class="header-logo__inscription" src="/images/icons/logo-jcrea.svg" alt="logo" />
 					</div>
 
-					<div class="header-form__checked">
+					<div class="header-form__buttons">
 						<label class="header-checked"
-							><input type="radio" name="navigation-header" /><span class="header-checked--active i3-r-l"
+							><input type="radio" name="navigation-header" aria-label="resume" /><span
+								class="header-checked__button i3-r-l"
 								>Resume</span
 							></label
 						>
 
 						<label class="header-checked"
-							><input type="radio" name="navigation-header" /><span class="header-checked--active i3-r-l"
+							><input type="radio" name="navigation-header" aria-label="project" /><span
+								class="header-checked__button i3-r-l"
 								>Project</span
 							></label
 						>
 
 						<label class="header-checked"
-							><input type="radio" name="navigation-header" /><span class="header-checked--active i3-r-l"
+							><input type="radio" name="navigation-header" aria-label="contact" /><span
+								class="header-checked__button i3-r-l"
 								>Contact</span
 							></label
 						>
 					</div>
 					<div class="ui-burger">
-						<label class="ui-burger__line" for="dropdown-1" role="button" type="button"
-							><span class="header-burger__line"></span> <span class="header-burger__line"></span
-							><span class="header-burger__line"></span>
+						<label class="ui-burger__svg" for="dropdown-1" role="button" type="button"
+							><span class="ui-line"></span> <span class="ui-line"></span><span class="ui-line"></span>
 						</label>
-						<input type="checkbox" id="dropdown-1" name="dropdown-1" />
+						<input type="checkbox" id="dropdown-1" name="dropdown-1" aria-label="menu button" />
 						<div class="ui-burger__box">
 							<label class="header-checked"
-								><input type="radio" name="navigation" value="" checked /><span
-									class="header-checked--active i3-r-l"
+								><input type="radio" name="navigation" value="" checked aria-label="home" /><span
+									class="header-checked__button i3-r-l"
 									>Home</span
 								></label
 							>
 							<label class="header-checked"
-								><input type="radio" name="navigation" /><span class="header-checked--active i3-r-l"
+								><input type="radio" name="navigation" aria-label="about" /><span
+									class="header-checked__button i3-r-l"
 									>About</span
 								></label
 							>
 							<label class="header-checked"
-								><input type="radio" name="navigation" /><span class="header-checked--active i3-r-l"
+								><input type="radio" name="navigation" aria-label="service" /><span
+									class="header-checked__button i3-r-l"
 									>Service</span
 								></label
 							>
 							<label class="header-checked"
-								><input type="radio" name="navigation" /><span class="header-checked--active i3-r-l"
+								><input type="radio" name="navigation" aria-label="resume" /><span
+									class="header-checked__button i3-r-l"
 									>Resume</span
 								></label
 							>
 							<label class="header-checked"
-								><input type="radio" name="navigation" /><span class="header-checked--active i3-r-l"
+								><input type="radio" name="navigation" aria-label="project" /><span
+									class="header-checked__button i3-r-l"
 									>Project</span
 								></label
 							>
 							<label class="header-checked"
-								><input type="radio" name="navigation" /><span class="header-checked--active i3-r-l"
+								><input type="radio" name="navigation" aria-label="contact" /><span
+									class="header-checked__button i3-r-l"
 									>Contact</span
 								></label
 							>
@@ -127,28 +141,24 @@
 		<main>
 			<section class="container-main container">
 				<div class="section-main">
-					<img class="section-main__eyelashes--up" src="./images/icons/eyelashes.svg" alt="lines" />
+					<img class="section-main__eyelashes--first" src="./images/icons/eyelashes.svg" alt="lines" />
 
 					<div class="section-main__title">
 						<p class="section-main__greetings i3-m-l">Hello!</p>
 
-						<p class="main-title__primary h1-s-u">I'm <span class="main-title__name h1-s-u">Jenny</span>,</p>
+						<p class="main-title__primary h1-s-u">I'm <span class="ui-color h1-s-u">Jenny</span>,</p>
 
 						<p class="main-title__primary h1-s-u">Product Designer</p>
 					</div>
 
-					<img class="section-main__eyelashes--down" src="./images/icons/eyelashes-big.svg" alt="lines" />
+					<img class="section-main__eyelashes--second" src="./images/icons/eyelashes-big.svg" alt="lines" />
 
-					<img
-						class="section-main__woman"
-						src="/images/icons/woman-title.png"
-						alt="woman"
-						draggable="false" />
+					<img class="section-main__img" src="/images/icons/woman-title.png" alt="woman" draggable="false" />
 				</div>
 
-				<div class="section-main__description">
+				<div class="section-main__content">
 					<div class="section-main__product">
-						<img class="main-product__quote--up" src="/images/icons/quote-up.svg" alt="quote" />
+						<img class="main-product__quote--first" src="/images/icons/quote-up.svg" alt="quote" />
 
 						<p class="main-product i3-m-l">
 							Jenny’s Exceptional product design ensure our website’s success.
@@ -167,58 +177,67 @@
 				</div>
 
 				<div class="section-main__button">
-					<div class="main-button__portfolio">
-						<p class="i1-l-l">Portfolio</p>
+					<button class="i1-l-l section-main__button--switch" type="button" aria-label="portfolio">
+						Portfolio
 
 						<img src="/images/icons/45-arrow-white.svg" alt="arrow" />
-					</div>
+					</button>
 
-					<div class="main-button__portfolio">
-						<p class="i1-l-l">Hire me</p>
+					<button class="i1-l-l section-main__button--switch" type="button" aria-label="hire me">
+						Hire me
 
 						<img src="/images/icons/45-arrow-white.svg" alt="arrow" />
-					</div>
+					</button>
 				</div>
 			</section>
+
 			<section class="section-services container">
-				<img class="section-services__background" src="/images/background/section-services.jpg" alt="food" />
+				<img class="ui-background" src="/images/background/section-services.jpg" alt="food" />
+
 				<img
 					class="section-services__crousant--first key-crousant"
 					src="/images/services/crousant.png"
 					alt="food" />
+
 				<img
 					class="section-services__crousant--second key-crousant"
 					src="/images/services/crousant.png"
 					alt="food" />
+
 				<img
 					class="section-services__crousant--third key-crousant"
 					src="/images/services/crousant.png"
 					alt="food" />
+
 				<div class="service-container">
-					<div class="services__title">
-						<p class="services__title--primary s1-m-l">
-							My<span class="main-title__name s1-m-l">Services</span>
-						</p>
-						<p class="services__title--secondary i3-m-l">
+					<div class="services-header">
+						<p class="services-header__title s1-m-l">My<span class="ui-color s1-m-l">Services</span></p>
+
+						<p class="services-header__subtitle i3-m-l">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus nunc, posuere in justo
 							vulputate, bibendum sodales
 						</p>
 					</div>
+
 					<div class="section-service__cards">
-						<div class="card-container">
+						<div class="ui-card__container">
 							<div class="service-card">
 								<p class="service-card__title s4-m-l">UI/UX Design</p>
+
 								<div class="card__images">
 									<img
 										class="service-card__image"
 										src="/images/services/cards/landing-page.jpg"
 										alt="image-design" />
+
 									<div class="service-card__light-gray"></div>
+
 									<div class="service-card__gray"></div>
 								</div>
 							</div>
+
 							<svg
-								class="service-card__arrow"
+								class="ui-card__arrow"
 								xmlns="http://www.w3.org/2000/svg"
 								width="114"
 								height="114"
@@ -246,20 +265,24 @@
 									stroke-linejoin="round" />
 							</svg>
 						</div>
-						<div class="card-container">
+
+						<div class="ui-card__container">
 							<div class="service-card">
 								<p class="service-card__title s4-m-l">Web Design</p>
+
 								<div class="card__images">
 									<img
 										class="service-card__image"
 										src="/images/services/cards/web-design.jpg"
 										alt="image-web" />
 									<div class="service-card__light-gray"></div>
+
 									<div class="service-card__gray"></div>
 								</div>
 							</div>
+
 							<svg
-								class="service-card__arrow"
+								class="ui-card__arrow"
 								xmlns="http://www.w3.org/2000/svg"
 								width="114"
 								height="114"
@@ -287,20 +310,24 @@
 									stroke-linejoin="round" />
 							</svg>
 						</div>
-						<div class="card-container">
+
+						<div class="ui-card__container">
 							<div class="service-card">
 								<p class="service-card__title s4-m-l">Landing Page</p>
+
 								<div class="card__images">
 									<img
 										class="service-card__image"
 										src="/images/services/cards/landing-page.jpg"
 										alt="image-design" />
 									<div class="service-card__light-gray"></div>
+
 									<div class="service-card__gray"></div>
 								</div>
 							</div>
+
 							<svg
-								class="service-card__arrow"
+								class="ui-card__arrow"
 								xmlns="http://www.w3.org/2000/svg"
 								width="114"
 								height="114"
@@ -335,63 +362,83 @@
 						><input type="radio" name="navigation-service" value="" checked />
 						<div class="ui-bullet__active"></div
 					></label>
+
 					<label class="ui-bullet"
 						><input type="radio" name="navigation-service" />
 						<div class="ui-bullet__active"></div
 					></label>
+
 					<label class="ui-bullet"
 						><input type="radio" name="navigation-service" />
 						<div class="ui-bullet__active"></div
 					></label>
+
 					<label class="ui-bullet"
 						><input type="radio" name="navigation-service" />
 						<div class="ui-bullet__active"></div
 					></label>
 				</div>
 			</section>
-			<section class="experince">
+
+			<section class="section-experince">
 				<div class="container">
-					<p class="experince-title h3-m-l">My <span class="main-title__name">Work Experince</span></p>
+					<p class="experince-title h3-m-l">My <span class="ui-color">Work Experince</span></p>
+
 					<div class="experince-work">
 						<div class="experince-card">
 							<p class="s2-s-l">Cognizant, Mumbai</p>
+
 							<p class="i2-r-l experince-primary__information--color">Sep 2016- July 2020</p>
 						</div>
+
 						<div class="experince-card">
 							<p class="s2-s-l">Experince Designer</p>
+
 							<p class="i2-r-l experince-primary__information--color lorem">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus nunc, posuere in justo
 								vulputate, bibendum sodales
 							</p>
 						</div>
+
 						<div class="experince-card">
 							<p class="s2-s-l">Sugee Pvt limited, Mumbai</p>
+
 							<p class="i2-r-l experince-primary__information--color">Sep 2020- July 2023</p>
 						</div>
+
 						<div class="experince-card">
 							<p class="s2-s-l">UI/UX Designer</p>
+
 							<p class="i2-r-l experince-primary__information--color lorem">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus nunc, posuere in justo
 								vulputate, bibendum sodales
 							</p>
 						</div>
+
 						<div class="experince-card">
 							<p class="s2-s-l">Cinetstox, Mumbai</p>
+
 							<p class="i2-r-l experince-primary__information--color">Sep 2023</p>
 						</div>
+
 						<div class="experince-card"><p class="s2-s-l">Lead UX Designer</p></div>
+
 						<img class="experince-image" src="/images/icons/chain.svg" alt="chain" />
 					</div>
 				</div>
 			</section>
+
 			<section class="hire-container">
 				<div class="container section-hire">
 					<div class="hire-image__container">
 						<img class="hire-woman" src="/images/hire/woman-hire.png" alt="woman" />
+
 						<img class="hire-ellipse" src="/images/hire/ellipse.png" alt="ellipse" />
 					</div>
+
 					<div class="hire-description">
-						<p class="description__title h3-s-l">Why <span class="main-title__name">Hire Me</span>?</p>
+						<p class="description__title h3-s-l">Why <span class="ui-color">Hire Me</span>?</p>
+
 						<p class="i3-r-l lorem description__subtitle">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus nunc, posuere in justo
 							vulputate, bibendum sodales
@@ -399,25 +446,34 @@
 						<div class="hire-description__project">
 							<div>
 								<p class="s3-m-l description-project__number">450+</p>
+
 								<p class="i3-r-l description-project__completed">Project Completed</p>
 							</div>
+
 							<div>
 								<p class="s3-m-l description-project__number">450+</p>
+
 								<p class="i3-r-l description-project__completed">Project Completed</p>
 							</div>
 						</div>
-						<button class="hire-description__button s4-s-l" type="button">Hire me</button>
+
+						<button class="hire-description__button s4-s-l" type="button" aria-label="hire me">
+							Hire me
+						</button>
 					</div>
 				</div>
 			</section>
-			<section class="portfolio">
+
+			<section class="section-portfolio">
 				<div class="container">
 					<div class="portfolio-header">
 						<p class="portfolio-title h3-s-l">
-							Lets have a look at my <span class="main-title__name">Portfolio</span>
+							Lets have a look at my <span class="ui-color">Portfolio</span>
 						</p>
-						<button class="ui-button i3-b-l" type="button">See All</button>
+
+						<button class="ui-button i3-b-l" type="button" aria-label="see all">See All</button>
 					</div>
+
 					<div class="portfolio-main__container">
 						<div class="portfolio-main__cards">
 							<div class="portfolio-card">
@@ -425,6 +481,7 @@
 									class="portfolio-card__img"
 									src="/images/portfolio/portfolio-card.png"
 									alt="background" />
+
 								<div class="portfolio-card__container">
 									<svg
 										class="portfolio-card__svg"
@@ -444,8 +501,10 @@
 											d="M20.6667 30.5833C19.8843 30.5833 19.25 31.2176 19.25 32C19.25 32.7824 19.8843 33.4167 20.6667 33.4167L40.6215 33.4167L33.8316 40.2066C33.2784 40.7598 33.2784 41.6568 33.8316 42.2101C34.3848 42.7633 35.2818 42.7633 35.8351 42.2101L44.0417 34.0035C45.1482 32.897 45.1482 31.103 44.0417 29.9965L35.8351 21.7899C35.2818 21.2367 34.3848 21.2367 33.8316 21.7899C33.2784 22.3432 33.2784 23.2402 33.8316 23.7934L40.6215 30.5833L20.6667 30.5833Z"
 											fill="currentColor" />
 									</svg>
+
 									<div class="portfolio-card__description">
 										<p class="card-description__title h2-b-l">Lirante</p>
+
 										<p class="card-description__subtitle i2-r-l">
 											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus nunc, posuere in
 											justo vulputate, bibendum sodales
@@ -453,11 +512,13 @@
 									</div>
 								</div>
 							</div>
+
 							<div class="portfolio-card">
 								<img
 									class="portfolio-card__img"
 									src="/images/portfolio/portfolio-card.png"
 									alt="background" />
+
 								<div class="portfolio-card__container">
 									<svg
 										class="portfolio-card__svg"
@@ -477,6 +538,7 @@
 											d="M20.6667 30.5833C19.8843 30.5833 19.25 31.2176 19.25 32C19.25 32.7824 19.8843 33.4167 20.6667 33.4167L40.6215 33.4167L33.8316 40.2066C33.2784 40.7598 33.2784 41.6568 33.8316 42.2101C34.3848 42.7633 35.2818 42.7633 35.8351 42.2101L44.0417 34.0035C45.1482 32.897 45.1482 31.103 44.0417 29.9965L35.8351 21.7899C35.2818 21.2367 34.3848 21.2367 33.8316 21.7899C33.2784 22.3432 33.2784 23.2402 33.8316 23.7934L40.6215 30.5833L20.6667 30.5833Z"
 											fill="currentColor" />
 									</svg>
+
 									<div class="portfolio-card__description">
 										<p class="card-description__title h2-b-l">Lirante</p>
 										<p class="card-description__subtitle i2-r-l">
@@ -488,39 +550,61 @@
 							</div>
 						</div>
 					</div>
+
 					<div class="ui-pagination pagination--portfolio">
 						<label class="ui-bullet"
 							><input type="radio" name="navigation-portfolio" value="" checked />
 							<div class="ui-bullet__active"></div
 						></label>
+
 						<label class="ui-bullet"
 							><input type="radio" name="navigation-portfolio" />
 							<div class="ui-bullet__active"></div
 						></label>
+
 						<label class="ui-bullet"
 							><input type="radio" name="navigation-portfolio" />
 							<div class="ui-bullet__active"></div
 						></label>
+
 						<label class="ui-bullet"
 							><input type="radio" name="navigation-portfolio" />
 							<div class="ui-bullet__active"></div
 						></label>
 					</div>
+
 					<div class="portfolio-footer">
 						<div class="portfolio-footer__box">
 							<div class="portfolio-footer__gradient"></div>
+
 							<div class="portfolio-footer__scroll">
 								<div class="portfolio-footer__buttons">
-									<button class="portfolio-footer__button i3-r-i" type="button">Landing Page</button>
-									<button class="portfolio-footer__button i3-r-i" type="button">Product Design</button>
-									<button class="portfolio-footer__button i3-r-i" type="button">Animation</button>
-									<button class="portfolio-footer__button i3-r-i" type="button">Glassmorphism</button>
-									<button class="portfolio-footer__button i3-r-i" type="button">Cards</button>
+									<button class="portfolio-footer__button i3-r-i" type="button" aria-label="landing page">
+										Landing Page
+									</button>
+
+									<button class="portfolio-footer__button i3-r-i" type="button" aria-label="product design">
+										Product Design
+									</button>
+
+									<button class="portfolio-footer__button i3-r-i" type="button" aria-label="animation">
+										Animation
+									</button>
+
+									<button class="portfolio-footer__button i3-r-i" type="button" aria-label="glassmorphism">
+										Glassmorphism
+									</button>
+
+									<button class="portfolio-footer__button i3-r-i" type="button" aria-label="cards">
+										Cards
+									</button>
 								</div>
 							</div>
 						</div>
+
 						<div class="portfolio-footer__description">
 							<p class="portfolio-footer__title s1-b-l">Lirante - Food Dilvery Solution</p>
+
 							<svg
 								class="portfolio-footer__svg--arrow"
 								width="58"
@@ -559,6 +643,7 @@
 									stroke-linejoin="round" />
 							</svg>
 						</div>
+
 						<p class="portfolio-footer__subtitle i3-r-l">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue interdum ligula a dignissim.
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas
@@ -567,6 +652,861 @@
 					</div>
 				</div>
 			</section>
+
+			<section class="container section-results">
+				<img
+					class="ui-background section-results__background"
+					src="/images/background/section-services.jpg"
+					alt="food" />
+
+				<div class="results-header">
+					<svg
+						class="results-header__eyelashes results-header__svg"
+						width="32"
+						height="33"
+						viewBox="0 0 32 33"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M2.00049 20.0005C2.00049 17.0005 5.00049 11.0005 2.00049 2.00055M9.50049 23.5005C13.8338 19.3339 22.7005 9.20055 23.5005 2.00055M12.5005 30.5005C15.1672 30.5005 22.3005 29.1005 29.5005 23.5005"
+							stroke="#FFFFFF"
+							stroke-width="4"
+							stroke-linecap="round"
+							stroke-linejoin="round" />
+					</svg>
+
+					<svg
+						class="results-header__star--first results-header__svg"
+						width="23"
+						height="29"
+						viewBox="0 0 23 29"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M18.2918 5.6213L15.8226 6.43699L13.497 3.86495C12.2649 2.45128 10.6385 0.921409 9.89224 0.401308C7.92003 -0.973246 6.78964 1.33041 7.50378 5.07818L8.1051 8.19243L4.35792 8.91009C2.00523 9.33135 0.403742 10.0384 0.154617 10.7367C-0.317617 11.7551 0.0877393 12.1962 4.30362 14.8967L8.89261 17.8573L8.71545 20.2704C8.00059 29.3637 11.3215 31.7575 14.1152 24.1131L15.3025 20.8186L16.9115 21.4644C21.648 23.418 22.3298 23.576 22.8503 22.8291C23.1478 22.4023 22.3829 20.2045 21.1495 17.9973C18.5809 13.2741 18.5052 12.5872 20.3645 9.91961C23.1533 5.91815 22.4108 4.37011 18.2918 5.6213ZM11.8733 7.33091C11.6874 7.59767 11.3949 7.79014 11.2883 7.71584C11.1284 7.60439 11.0478 7.15187 11.0738 6.77366C11.137 6.34209 11.3923 6.20298 11.6589 6.38873C11.9787 6.61163 12.0965 7.01079 11.8733 7.33091ZM14.8411 11.9359C14.9539 12.5694 14.4395 13.8756 13.733 14.8893L12.3943 16.81L11.8786 13.9139C11.4434 11.4703 11.5971 11.0225 12.6668 10.7376C14.1729 10.2812 14.5832 10.4879 14.8411 11.9359ZM8.28381 13.3902C8.13012 13.838 7.46447 13.7704 6.61162 13.176C5.33235 12.2844 5.30012 12.1034 6.36985 11.8184C7.74823 11.4315 8.6172 12.1165 8.28381 13.3902Z"
+							fill="#FCFCFD" />
+					</svg>
+
+					<svg
+						class="results-header__star--second results-header__svg"
+						width="23"
+						height="29"
+						viewBox="0 0 23 29"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M18.2918 5.6213L15.8226 6.43699L13.497 3.86495C12.2649 2.45128 10.6385 0.921409 9.89224 0.401308C7.92003 -0.973246 6.78964 1.33041 7.50378 5.07818L8.1051 8.19243L4.35792 8.91009C2.00523 9.33135 0.403742 10.0384 0.154617 10.7367C-0.317617 11.7551 0.0877393 12.1962 4.30362 14.8967L8.89261 17.8573L8.71545 20.2704C8.00059 29.3637 11.3215 31.7575 14.1152 24.1131L15.3025 20.8186L16.9115 21.4644C21.648 23.418 22.3298 23.576 22.8503 22.8291C23.1478 22.4023 22.3829 20.2045 21.1495 17.9973C18.5809 13.2741 18.5052 12.5872 20.3645 9.91961C23.1533 5.91815 22.4108 4.37011 18.2918 5.6213ZM11.8733 7.33091C11.6874 7.59767 11.3949 7.79014 11.2883 7.71584C11.1284 7.60439 11.0478 7.15187 11.0738 6.77366C11.137 6.34209 11.3923 6.20298 11.6589 6.38873C11.9787 6.61163 12.0965 7.01079 11.8733 7.33091ZM14.8411 11.9359C14.9539 12.5694 14.4395 13.8756 13.733 14.8893L12.3943 16.81L11.8786 13.9139C11.4434 11.4703 11.5971 11.0225 12.6668 10.7376C14.1729 10.2812 14.5832 10.4879 14.8411 11.9359ZM8.28381 13.3902C8.13012 13.838 7.46447 13.7704 6.61162 13.176C5.33235 12.2844 5.30012 12.1034 6.36985 11.8184C7.74823 11.4315 8.6172 12.1165 8.28381 13.3902Z"
+							fill="#FCFCFD" />
+					</svg>
+
+					<p class="results-header__title s1-m-l">Testimonials That</p>
+
+					<p class="results-header__title s1-m-l">Speak to <span class="ui-color">My Results</span></p>
+
+					<p class="results-header__subtitle i3-r-l">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue interdum ligula a dignissim.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas
+						lobortis.
+					</p>
+				</div>
+
+				<div class="results-cards">
+					<div class="results-card">
+						<svg
+							class="results-card__svg"
+							width="128"
+							height="128"
+							viewBox="0 0 128 128"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M84.8532 65.9732H109.867C109.44 90.8799 104.533 94.9865 89.2266 104.053C87.4666 105.12 86.8799 107.36 87.9466 109.173C89.0132 110.933 91.2532 111.52 93.0666 110.453C111.093 99.7865 117.387 93.2799 117.387 62.2398V33.4932C117.387 24.3732 109.973 17.0132 100.907 17.0132H84.9066C75.5199 17.0132 68.4266 24.1065 68.4266 33.4932V49.4932C68.3732 58.8798 75.4666 65.9732 84.8532 65.9732Z"
+								fill="#667085"
+								fill-opacity="0.3" />
+							<path
+								d="M27.1466 65.9732H52.16C51.7333 90.8799 46.8266 94.9865 31.52 104.053C29.76 105.12 29.1733 107.36 30.24 109.173C31.3066 110.933 33.5466 111.52 35.36 110.453C53.3866 99.7865 59.68 93.2799 59.68 62.2398V33.4932C59.68 24.3732 52.2666 17.0132 43.2 17.0132H27.2C17.76 17.0132 10.6666 24.1065 10.6666 33.4932V49.4932C10.6666 58.8798 17.76 65.9732 27.1466 65.9732Z"
+								fill="#667085"
+								fill-opacity="0.3" />
+						</svg>
+
+						<div class="results-card__developer">
+							<img class="reslts-card__avatar" src="/images/icons/indus.svg" alt="avatar" />
+
+							<div class="results-card__people">
+								<p class="results-card__name i2-b-u">Jayesh Patil</p>
+
+								<p class="results-card__post i4-r-u">CEO, Lirante</p>
+							</div>
+						</div>
+
+						<div class="results-card__grade">
+							<svg
+								width="160"
+								height="32"
+								viewBox="0 0 160 32"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M23.8912 19.0933C23.5459 19.428 23.3872 19.912 23.4659 20.3867L24.6512 26.9467C24.7512 27.5027 24.5165 28.0653 24.0512 28.3867C23.5952 28.72 22.9885 28.76 22.4912 28.4933L16.5858 25.4133C16.3805 25.304 16.1525 25.2453 15.9192 25.2387H15.5578C15.4325 25.2573 15.3099 25.2973 15.1979 25.3587L9.29118 28.4533C8.99918 28.6 8.66852 28.652 8.34452 28.6C7.55518 28.4507 7.02852 27.6987 7.15785 26.9053L8.34452 20.3453C8.42318 19.8667 8.26452 19.38 7.91918 19.04L3.10452 14.3733C2.70185 13.9827 2.56185 13.396 2.74585 12.8667C2.92452 12.3387 3.38052 11.9533 3.93118 11.8667L10.5578 10.9053C11.0619 10.8533 11.5045 10.5467 11.7312 10.0933L14.6512 4.10666C14.7205 3.97333 14.8099 3.85066 14.9179 3.74666L15.0378 3.65333C15.1005 3.58399 15.1725 3.52666 15.2525 3.47999L15.3979 3.42666L15.6245 3.33333H16.1859C16.6872 3.38533 17.1285 3.68533 17.3592 4.13333L20.3179 10.0933C20.5312 10.5293 20.9459 10.832 21.4245 10.9053L28.0512 11.8667C28.6112 11.9467 29.0792 12.3333 29.2645 12.8667C29.4392 13.4013 29.2885 13.988 28.8779 14.3733L23.8912 19.0933Z"
+									fill="#FD853A" />
+								<path
+									d="M55.8912 19.0933C55.5459 19.428 55.3872 19.912 55.4659 20.3867L56.6512 26.9467C56.7512 27.5027 56.5165 28.0653 56.0512 28.3867C55.5952 28.72 54.9885 28.76 54.4912 28.4933L48.5858 25.4133C48.3805 25.304 48.1525 25.2453 47.9192 25.2387H47.5578C47.4325 25.2573 47.3099 25.2973 47.1979 25.3587L41.2912 28.4533C40.9992 28.6 40.6685 28.652 40.3445 28.6C39.5552 28.4507 39.0285 27.6987 39.1579 26.9053L40.3445 20.3453C40.4232 19.8667 40.2645 19.38 39.9192 19.04L35.1045 14.3733C34.7019 13.9827 34.5619 13.396 34.7459 12.8667C34.9245 12.3387 35.3805 11.9533 35.9312 11.8667L42.5578 10.9053C43.0619 10.8533 43.5045 10.5467 43.7312 10.0933L46.6512 4.10666C46.7205 3.97333 46.8099 3.85066 46.9179 3.74666L47.0378 3.65333C47.1005 3.58399 47.1725 3.52666 47.2525 3.47999L47.3979 3.42666L47.6245 3.33333H48.1859C48.6872 3.38533 49.1285 3.68533 49.3592 4.13333L52.3179 10.0933C52.5312 10.5293 52.9459 10.832 53.4245 10.9053L60.0512 11.8667C60.6112 11.9467 61.0792 12.3333 61.2645 12.8667C61.4392 13.4013 61.2885 13.988 60.8779 14.3733L55.8912 19.0933Z"
+									fill="#FD853A" />
+								<path
+									d="M87.8912 19.0933C87.5459 19.428 87.3872 19.912 87.4659 20.3867L88.6512 26.9467C88.7512 27.5027 88.5165 28.0653 88.0512 28.3867C87.5952 28.72 86.9885 28.76 86.4912 28.4933L80.5858 25.4133C80.3805 25.304 80.1525 25.2453 79.9192 25.2387H79.5578C79.4325 25.2573 79.3099 25.2973 79.1979 25.3587L73.2912 28.4533C72.9992 28.6 72.6685 28.652 72.3445 28.6C71.5552 28.4507 71.0285 27.6987 71.1579 26.9053L72.3445 20.3453C72.4232 19.8667 72.2645 19.38 71.9192 19.04L67.1045 14.3733C66.7019 13.9827 66.5619 13.396 66.7459 12.8667C66.9245 12.3387 67.3805 11.9533 67.9312 11.8667L74.5578 10.9053C75.0619 10.8533 75.5045 10.5467 75.7312 10.0933L78.6512 4.10666C78.7205 3.97333 78.8099 3.85066 78.9179 3.74666L79.0378 3.65333C79.1005 3.58399 79.1725 3.52666 79.2525 3.47999L79.3979 3.42666L79.6245 3.33333H80.1859C80.6872 3.38533 81.1285 3.68533 81.3592 4.13333L84.3179 10.0933C84.5312 10.5293 84.9459 10.832 85.4245 10.9053L92.0512 11.8667C92.6112 11.9467 93.0792 12.3333 93.2645 12.8667C93.4392 13.4013 93.2885 13.988 92.8779 14.3733L87.8912 19.0933Z"
+									fill="#FD853A" />
+								<path
+									d="M119.891 19.0933C119.546 19.428 119.387 19.912 119.466 20.3867L120.651 26.9467C120.751 27.5027 120.517 28.0653 120.051 28.3867C119.595 28.72 118.989 28.76 118.491 28.4933L112.586 25.4133C112.381 25.304 112.153 25.2453 111.919 25.2387H111.558C111.433 25.2573 111.31 25.2973 111.198 25.3587L105.291 28.4533C104.999 28.6 104.669 28.652 104.345 28.6C103.555 28.4507 103.029 27.6987 103.158 26.9053L104.345 20.3453C104.423 19.8667 104.265 19.38 103.919 19.04L99.1045 14.3733C98.7019 13.9827 98.5619 13.396 98.7459 12.8667C98.9245 12.3387 99.3805 11.9533 99.9312 11.8667L106.558 10.9053C107.062 10.8533 107.505 10.5467 107.731 10.0933L110.651 4.10666C110.721 3.97333 110.81 3.85066 110.918 3.74666L111.038 3.65333C111.101 3.58399 111.173 3.52666 111.253 3.47999L111.398 3.42666L111.625 3.33333H112.186C112.687 3.38533 113.129 3.68533 113.359 4.13333L116.318 10.0933C116.531 10.5293 116.946 10.832 117.425 10.9053L124.051 11.8667C124.611 11.9467 125.079 12.3333 125.265 12.8667C125.439 13.4013 125.289 13.988 124.878 14.3733L119.891 19.0933Z"
+									fill="#FD853A" />
+								<path
+									d="M151.891 19.0933C151.546 19.428 151.387 19.912 151.466 20.3867L152.651 26.9467C152.751 27.5027 152.517 28.0653 152.051 28.3867C151.595 28.72 150.989 28.76 150.491 28.4933L144.586 25.4133C144.381 25.304 144.153 25.2453 143.919 25.2387H143.558C143.433 25.2573 143.31 25.2973 143.198 25.3587L137.291 28.4533C136.999 28.6 136.669 28.652 136.345 28.6C135.555 28.4507 135.029 27.6987 135.158 26.9053L136.345 20.3453C136.423 19.8667 136.265 19.38 135.919 19.04L131.105 14.3733C130.702 13.9827 130.562 13.396 130.746 12.8667C130.925 12.3387 131.381 11.9533 131.931 11.8667L138.558 10.9053C139.062 10.8533 139.505 10.5467 139.731 10.0933L142.651 4.10666C142.721 3.97333 142.81 3.85066 142.918 3.74666L143.038 3.65333C143.101 3.58399 143.173 3.52666 143.253 3.47999L143.398 3.42666L143.625 3.33333H144.186C144.687 3.38533 145.129 3.68533 145.359 4.13333L148.318 10.0933C148.531 10.5293 148.946 10.832 149.425 10.9053L156.051 11.8667C156.611 11.9467 157.079 12.3333 157.265 12.8667C157.439 13.4013 157.289 13.988 156.878 14.3733L151.891 19.0933Z"
+									fill="#FD853A" />
+							</svg>
+
+							<p class="results-card__rating i1-m-l">5.0</p>
+						</div>
+
+						<p class="results-card__subtitle i3-r-l">
+							consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet,
+							consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.Sed lobortis orci
+							elementum egestas lobortis.Sed lobortis orci elementum egestas lobortis.
+						</p>
+					</div>
+
+					<div class="results-card">
+						<svg
+							class="results-card__svg"
+							width="128"
+							height="128"
+							viewBox="0 0 128 128"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M84.8532 65.9732H109.867C109.44 90.8799 104.533 94.9865 89.2266 104.053C87.4666 105.12 86.8799 107.36 87.9466 109.173C89.0132 110.933 91.2532 111.52 93.0666 110.453C111.093 99.7865 117.387 93.2799 117.387 62.2398V33.4932C117.387 24.3732 109.973 17.0132 100.907 17.0132H84.9066C75.5199 17.0132 68.4266 24.1065 68.4266 33.4932V49.4932C68.3732 58.8798 75.4666 65.9732 84.8532 65.9732Z"
+								fill="#667085"
+								fill-opacity="0.3" />
+							<path
+								d="M27.1466 65.9732H52.16C51.7333 90.8799 46.8266 94.9865 31.52 104.053C29.76 105.12 29.1733 107.36 30.24 109.173C31.3066 110.933 33.5466 111.52 35.36 110.453C53.3866 99.7865 59.68 93.2799 59.68 62.2398V33.4932C59.68 24.3732 52.2666 17.0132 43.2 17.0132H27.2C17.76 17.0132 10.6666 24.1065 10.6666 33.4932V49.4932C10.6666 58.8798 17.76 65.9732 27.1466 65.9732Z"
+								fill="#667085"
+								fill-opacity="0.3" />
+						</svg>
+
+						<div class="results-card__developer">
+							<img class="reslts-card__avatar" src="/images/icons/indus.svg" alt="avatar" />
+							<div class="results-card__people">
+								<p class="results-card__name i2-b-u">Jayesh Patil</p>
+								<p class="results-card__post i4-r-u">CEO, Lirante</p>
+							</div>
+						</div>
+
+						<div class="results-card__grade">
+							<svg
+								width="160"
+								height="32"
+								viewBox="0 0 160 32"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M23.8912 19.0933C23.5459 19.428 23.3872 19.912 23.4659 20.3867L24.6512 26.9467C24.7512 27.5027 24.5165 28.0653 24.0512 28.3867C23.5952 28.72 22.9885 28.76 22.4912 28.4933L16.5858 25.4133C16.3805 25.304 16.1525 25.2453 15.9192 25.2387H15.5578C15.4325 25.2573 15.3099 25.2973 15.1979 25.3587L9.29118 28.4533C8.99918 28.6 8.66852 28.652 8.34452 28.6C7.55518 28.4507 7.02852 27.6987 7.15785 26.9053L8.34452 20.3453C8.42318 19.8667 8.26452 19.38 7.91918 19.04L3.10452 14.3733C2.70185 13.9827 2.56185 13.396 2.74585 12.8667C2.92452 12.3387 3.38052 11.9533 3.93118 11.8667L10.5578 10.9053C11.0619 10.8533 11.5045 10.5467 11.7312 10.0933L14.6512 4.10666C14.7205 3.97333 14.8099 3.85066 14.9179 3.74666L15.0378 3.65333C15.1005 3.58399 15.1725 3.52666 15.2525 3.47999L15.3979 3.42666L15.6245 3.33333H16.1859C16.6872 3.38533 17.1285 3.68533 17.3592 4.13333L20.3179 10.0933C20.5312 10.5293 20.9459 10.832 21.4245 10.9053L28.0512 11.8667C28.6112 11.9467 29.0792 12.3333 29.2645 12.8667C29.4392 13.4013 29.2885 13.988 28.8779 14.3733L23.8912 19.0933Z"
+									fill="#FD853A" />
+								<path
+									d="M55.8912 19.0933C55.5459 19.428 55.3872 19.912 55.4659 20.3867L56.6512 26.9467C56.7512 27.5027 56.5165 28.0653 56.0512 28.3867C55.5952 28.72 54.9885 28.76 54.4912 28.4933L48.5858 25.4133C48.3805 25.304 48.1525 25.2453 47.9192 25.2387H47.5578C47.4325 25.2573 47.3099 25.2973 47.1979 25.3587L41.2912 28.4533C40.9992 28.6 40.6685 28.652 40.3445 28.6C39.5552 28.4507 39.0285 27.6987 39.1579 26.9053L40.3445 20.3453C40.4232 19.8667 40.2645 19.38 39.9192 19.04L35.1045 14.3733C34.7019 13.9827 34.5619 13.396 34.7459 12.8667C34.9245 12.3387 35.3805 11.9533 35.9312 11.8667L42.5578 10.9053C43.0619 10.8533 43.5045 10.5467 43.7312 10.0933L46.6512 4.10666C46.7205 3.97333 46.8099 3.85066 46.9179 3.74666L47.0378 3.65333C47.1005 3.58399 47.1725 3.52666 47.2525 3.47999L47.3979 3.42666L47.6245 3.33333H48.1859C48.6872 3.38533 49.1285 3.68533 49.3592 4.13333L52.3179 10.0933C52.5312 10.5293 52.9459 10.832 53.4245 10.9053L60.0512 11.8667C60.6112 11.9467 61.0792 12.3333 61.2645 12.8667C61.4392 13.4013 61.2885 13.988 60.8779 14.3733L55.8912 19.0933Z"
+									fill="#FD853A" />
+								<path
+									d="M87.8912 19.0933C87.5459 19.428 87.3872 19.912 87.4659 20.3867L88.6512 26.9467C88.7512 27.5027 88.5165 28.0653 88.0512 28.3867C87.5952 28.72 86.9885 28.76 86.4912 28.4933L80.5858 25.4133C80.3805 25.304 80.1525 25.2453 79.9192 25.2387H79.5578C79.4325 25.2573 79.3099 25.2973 79.1979 25.3587L73.2912 28.4533C72.9992 28.6 72.6685 28.652 72.3445 28.6C71.5552 28.4507 71.0285 27.6987 71.1579 26.9053L72.3445 20.3453C72.4232 19.8667 72.2645 19.38 71.9192 19.04L67.1045 14.3733C66.7019 13.9827 66.5619 13.396 66.7459 12.8667C66.9245 12.3387 67.3805 11.9533 67.9312 11.8667L74.5578 10.9053C75.0619 10.8533 75.5045 10.5467 75.7312 10.0933L78.6512 4.10666C78.7205 3.97333 78.8099 3.85066 78.9179 3.74666L79.0378 3.65333C79.1005 3.58399 79.1725 3.52666 79.2525 3.47999L79.3979 3.42666L79.6245 3.33333H80.1859C80.6872 3.38533 81.1285 3.68533 81.3592 4.13333L84.3179 10.0933C84.5312 10.5293 84.9459 10.832 85.4245 10.9053L92.0512 11.8667C92.6112 11.9467 93.0792 12.3333 93.2645 12.8667C93.4392 13.4013 93.2885 13.988 92.8779 14.3733L87.8912 19.0933Z"
+									fill="#FD853A" />
+								<path
+									d="M119.891 19.0933C119.546 19.428 119.387 19.912 119.466 20.3867L120.651 26.9467C120.751 27.5027 120.517 28.0653 120.051 28.3867C119.595 28.72 118.989 28.76 118.491 28.4933L112.586 25.4133C112.381 25.304 112.153 25.2453 111.919 25.2387H111.558C111.433 25.2573 111.31 25.2973 111.198 25.3587L105.291 28.4533C104.999 28.6 104.669 28.652 104.345 28.6C103.555 28.4507 103.029 27.6987 103.158 26.9053L104.345 20.3453C104.423 19.8667 104.265 19.38 103.919 19.04L99.1045 14.3733C98.7019 13.9827 98.5619 13.396 98.7459 12.8667C98.9245 12.3387 99.3805 11.9533 99.9312 11.8667L106.558 10.9053C107.062 10.8533 107.505 10.5467 107.731 10.0933L110.651 4.10666C110.721 3.97333 110.81 3.85066 110.918 3.74666L111.038 3.65333C111.101 3.58399 111.173 3.52666 111.253 3.47999L111.398 3.42666L111.625 3.33333H112.186C112.687 3.38533 113.129 3.68533 113.359 4.13333L116.318 10.0933C116.531 10.5293 116.946 10.832 117.425 10.9053L124.051 11.8667C124.611 11.9467 125.079 12.3333 125.265 12.8667C125.439 13.4013 125.289 13.988 124.878 14.3733L119.891 19.0933Z"
+									fill="#FD853A" />
+								<path
+									d="M151.891 19.0933C151.546 19.428 151.387 19.912 151.466 20.3867L152.651 26.9467C152.751 27.5027 152.517 28.0653 152.051 28.3867C151.595 28.72 150.989 28.76 150.491 28.4933L144.586 25.4133C144.381 25.304 144.153 25.2453 143.919 25.2387H143.558C143.433 25.2573 143.31 25.2973 143.198 25.3587L137.291 28.4533C136.999 28.6 136.669 28.652 136.345 28.6C135.555 28.4507 135.029 27.6987 135.158 26.9053L136.345 20.3453C136.423 19.8667 136.265 19.38 135.919 19.04L131.105 14.3733C130.702 13.9827 130.562 13.396 130.746 12.8667C130.925 12.3387 131.381 11.9533 131.931 11.8667L138.558 10.9053C139.062 10.8533 139.505 10.5467 139.731 10.0933L142.651 4.10666C142.721 3.97333 142.81 3.85066 142.918 3.74666L143.038 3.65333C143.101 3.58399 143.173 3.52666 143.253 3.47999L143.398 3.42666L143.625 3.33333H144.186C144.687 3.38533 145.129 3.68533 145.359 4.13333L148.318 10.0933C148.531 10.5293 148.946 10.832 149.425 10.9053L156.051 11.8667C156.611 11.9467 157.079 12.3333 157.265 12.8667C157.439 13.4013 157.289 13.988 156.878 14.3733L151.891 19.0933Z"
+									fill="#FD853A" />
+							</svg>
+
+							<p class="results-card__rating i1-m-l">5.0</p>
+						</div>
+
+						<p class="results-card__subtitle i3-r-l">
+							consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet,
+							consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.Sed lobortis orci
+							elementum egestas lobortis.Sed lobortis orci elementum egestas lobortis.
+						</p>
+					</div>
+
+					<div class="results-card">
+						<svg
+							class="results-card__svg"
+							width="128"
+							height="128"
+							viewBox="0 0 128 128"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M84.8532 65.9732H109.867C109.44 90.8799 104.533 94.9865 89.2266 104.053C87.4666 105.12 86.8799 107.36 87.9466 109.173C89.0132 110.933 91.2532 111.52 93.0666 110.453C111.093 99.7865 117.387 93.2799 117.387 62.2398V33.4932C117.387 24.3732 109.973 17.0132 100.907 17.0132H84.9066C75.5199 17.0132 68.4266 24.1065 68.4266 33.4932V49.4932C68.3732 58.8798 75.4666 65.9732 84.8532 65.9732Z"
+								fill="#667085"
+								fill-opacity="0.3" />
+							<path
+								d="M27.1466 65.9732H52.16C51.7333 90.8799 46.8266 94.9865 31.52 104.053C29.76 105.12 29.1733 107.36 30.24 109.173C31.3066 110.933 33.5466 111.52 35.36 110.453C53.3866 99.7865 59.68 93.2799 59.68 62.2398V33.4932C59.68 24.3732 52.2666 17.0132 43.2 17.0132H27.2C17.76 17.0132 10.6666 24.1065 10.6666 33.4932V49.4932C10.6666 58.8798 17.76 65.9732 27.1466 65.9732Z"
+								fill="#667085"
+								fill-opacity="0.3" />
+						</svg>
+
+						<div class="results-card__developer">
+							<img class="reslts-card__avatar" src="/images/icons/indus.svg" alt="avatar" />
+
+							<div class="results-card__people">
+								<p class="results-card__name i2-b-u">Jayesh Patil</p>
+
+								<p class="results-card__post i4-r-u">CEO, Lirante</p>
+							</div>
+						</div>
+
+						<div class="results-card__grade">
+							<svg
+								width="160"
+								height="32"
+								viewBox="0 0 160 32"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M23.8912 19.0933C23.5459 19.428 23.3872 19.912 23.4659 20.3867L24.6512 26.9467C24.7512 27.5027 24.5165 28.0653 24.0512 28.3867C23.5952 28.72 22.9885 28.76 22.4912 28.4933L16.5858 25.4133C16.3805 25.304 16.1525 25.2453 15.9192 25.2387H15.5578C15.4325 25.2573 15.3099 25.2973 15.1979 25.3587L9.29118 28.4533C8.99918 28.6 8.66852 28.652 8.34452 28.6C7.55518 28.4507 7.02852 27.6987 7.15785 26.9053L8.34452 20.3453C8.42318 19.8667 8.26452 19.38 7.91918 19.04L3.10452 14.3733C2.70185 13.9827 2.56185 13.396 2.74585 12.8667C2.92452 12.3387 3.38052 11.9533 3.93118 11.8667L10.5578 10.9053C11.0619 10.8533 11.5045 10.5467 11.7312 10.0933L14.6512 4.10666C14.7205 3.97333 14.8099 3.85066 14.9179 3.74666L15.0378 3.65333C15.1005 3.58399 15.1725 3.52666 15.2525 3.47999L15.3979 3.42666L15.6245 3.33333H16.1859C16.6872 3.38533 17.1285 3.68533 17.3592 4.13333L20.3179 10.0933C20.5312 10.5293 20.9459 10.832 21.4245 10.9053L28.0512 11.8667C28.6112 11.9467 29.0792 12.3333 29.2645 12.8667C29.4392 13.4013 29.2885 13.988 28.8779 14.3733L23.8912 19.0933Z"
+									fill="#FD853A" />
+								<path
+									d="M55.8912 19.0933C55.5459 19.428 55.3872 19.912 55.4659 20.3867L56.6512 26.9467C56.7512 27.5027 56.5165 28.0653 56.0512 28.3867C55.5952 28.72 54.9885 28.76 54.4912 28.4933L48.5858 25.4133C48.3805 25.304 48.1525 25.2453 47.9192 25.2387H47.5578C47.4325 25.2573 47.3099 25.2973 47.1979 25.3587L41.2912 28.4533C40.9992 28.6 40.6685 28.652 40.3445 28.6C39.5552 28.4507 39.0285 27.6987 39.1579 26.9053L40.3445 20.3453C40.4232 19.8667 40.2645 19.38 39.9192 19.04L35.1045 14.3733C34.7019 13.9827 34.5619 13.396 34.7459 12.8667C34.9245 12.3387 35.3805 11.9533 35.9312 11.8667L42.5578 10.9053C43.0619 10.8533 43.5045 10.5467 43.7312 10.0933L46.6512 4.10666C46.7205 3.97333 46.8099 3.85066 46.9179 3.74666L47.0378 3.65333C47.1005 3.58399 47.1725 3.52666 47.2525 3.47999L47.3979 3.42666L47.6245 3.33333H48.1859C48.6872 3.38533 49.1285 3.68533 49.3592 4.13333L52.3179 10.0933C52.5312 10.5293 52.9459 10.832 53.4245 10.9053L60.0512 11.8667C60.6112 11.9467 61.0792 12.3333 61.2645 12.8667C61.4392 13.4013 61.2885 13.988 60.8779 14.3733L55.8912 19.0933Z"
+									fill="#FD853A" />
+								<path
+									d="M87.8912 19.0933C87.5459 19.428 87.3872 19.912 87.4659 20.3867L88.6512 26.9467C88.7512 27.5027 88.5165 28.0653 88.0512 28.3867C87.5952 28.72 86.9885 28.76 86.4912 28.4933L80.5858 25.4133C80.3805 25.304 80.1525 25.2453 79.9192 25.2387H79.5578C79.4325 25.2573 79.3099 25.2973 79.1979 25.3587L73.2912 28.4533C72.9992 28.6 72.6685 28.652 72.3445 28.6C71.5552 28.4507 71.0285 27.6987 71.1579 26.9053L72.3445 20.3453C72.4232 19.8667 72.2645 19.38 71.9192 19.04L67.1045 14.3733C66.7019 13.9827 66.5619 13.396 66.7459 12.8667C66.9245 12.3387 67.3805 11.9533 67.9312 11.8667L74.5578 10.9053C75.0619 10.8533 75.5045 10.5467 75.7312 10.0933L78.6512 4.10666C78.7205 3.97333 78.8099 3.85066 78.9179 3.74666L79.0378 3.65333C79.1005 3.58399 79.1725 3.52666 79.2525 3.47999L79.3979 3.42666L79.6245 3.33333H80.1859C80.6872 3.38533 81.1285 3.68533 81.3592 4.13333L84.3179 10.0933C84.5312 10.5293 84.9459 10.832 85.4245 10.9053L92.0512 11.8667C92.6112 11.9467 93.0792 12.3333 93.2645 12.8667C93.4392 13.4013 93.2885 13.988 92.8779 14.3733L87.8912 19.0933Z"
+									fill="#FD853A" />
+								<path
+									d="M119.891 19.0933C119.546 19.428 119.387 19.912 119.466 20.3867L120.651 26.9467C120.751 27.5027 120.517 28.0653 120.051 28.3867C119.595 28.72 118.989 28.76 118.491 28.4933L112.586 25.4133C112.381 25.304 112.153 25.2453 111.919 25.2387H111.558C111.433 25.2573 111.31 25.2973 111.198 25.3587L105.291 28.4533C104.999 28.6 104.669 28.652 104.345 28.6C103.555 28.4507 103.029 27.6987 103.158 26.9053L104.345 20.3453C104.423 19.8667 104.265 19.38 103.919 19.04L99.1045 14.3733C98.7019 13.9827 98.5619 13.396 98.7459 12.8667C98.9245 12.3387 99.3805 11.9533 99.9312 11.8667L106.558 10.9053C107.062 10.8533 107.505 10.5467 107.731 10.0933L110.651 4.10666C110.721 3.97333 110.81 3.85066 110.918 3.74666L111.038 3.65333C111.101 3.58399 111.173 3.52666 111.253 3.47999L111.398 3.42666L111.625 3.33333H112.186C112.687 3.38533 113.129 3.68533 113.359 4.13333L116.318 10.0933C116.531 10.5293 116.946 10.832 117.425 10.9053L124.051 11.8667C124.611 11.9467 125.079 12.3333 125.265 12.8667C125.439 13.4013 125.289 13.988 124.878 14.3733L119.891 19.0933Z"
+									fill="#FD853A" />
+								<path
+									d="M151.891 19.0933C151.546 19.428 151.387 19.912 151.466 20.3867L152.651 26.9467C152.751 27.5027 152.517 28.0653 152.051 28.3867C151.595 28.72 150.989 28.76 150.491 28.4933L144.586 25.4133C144.381 25.304 144.153 25.2453 143.919 25.2387H143.558C143.433 25.2573 143.31 25.2973 143.198 25.3587L137.291 28.4533C136.999 28.6 136.669 28.652 136.345 28.6C135.555 28.4507 135.029 27.6987 135.158 26.9053L136.345 20.3453C136.423 19.8667 136.265 19.38 135.919 19.04L131.105 14.3733C130.702 13.9827 130.562 13.396 130.746 12.8667C130.925 12.3387 131.381 11.9533 131.931 11.8667L138.558 10.9053C139.062 10.8533 139.505 10.5467 139.731 10.0933L142.651 4.10666C142.721 3.97333 142.81 3.85066 142.918 3.74666L143.038 3.65333C143.101 3.58399 143.173 3.52666 143.253 3.47999L143.398 3.42666L143.625 3.33333H144.186C144.687 3.38533 145.129 3.68533 145.359 4.13333L148.318 10.0933C148.531 10.5293 148.946 10.832 149.425 10.9053L156.051 11.8667C156.611 11.9467 157.079 12.3333 157.265 12.8667C157.439 13.4013 157.289 13.988 156.878 14.3733L151.891 19.0933Z"
+									fill="#FD853A" />
+							</svg>
+
+							<p class="results-card__rating i1-m-l">5.0</p>
+						</div>
+
+						<p class="results-card__subtitle i3-r-l">
+							consectetur adipiscing elit. Sed congue interdum ligula a dignissim. Lorem ipsum dolor sit amet,
+							consectetur adipiscing elit. Sed lobortis orci elementum egestas lobortis.Sed lobortis orci
+							elementum egestas lobortis.Sed lobortis orci elementum egestas lobortis.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="container section-discuss">
+				<p class="discuss__title h3-s-l">
+					Have an Awsome Project Idea? <span class="ui-color">Let’s Discuss</span>
+				</p>
+
+				<div class="discuss-box">
+					<form class="discuss-registration">
+						<label class="discuss-registration__box"
+							><svg
+								class="discuss-registration__post"
+								width="64"
+								height="58"
+								viewBox="0 0 64 58"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<rect width="64" height="58" rx="29" fill="#FFEAD5" />
+								<path
+									d="M38.6666 17.6665H25.3333C21.3333 17.6665 18.6666 19.6665 18.6666 24.3332V33.6665C18.6666 38.3332 21.3333 40.3332 25.3333 40.3332H38.6666C42.6666 40.3332 45.3333 38.3332 45.3333 33.6665V24.3332C45.3333 19.6665 42.6666 17.6665 38.6666 17.6665ZM39.2933 25.7865L35.12 29.1198C34.24 29.8265 33.12 30.1732 32 30.1732C30.88 30.1732 29.7466 29.8265 28.88 29.1198L24.7066 25.7865C24.28 25.4398 24.2133 24.7998 24.5466 24.3732C24.8933 23.9465 25.52 23.8665 25.9466 24.2132L30.12 27.5465C31.1333 28.3598 32.8533 28.3598 33.8666 27.5465L38.04 24.2132C38.4666 23.8665 39.1066 23.9332 39.44 24.3732C39.7866 24.7998 39.72 25.4398 39.2933 25.7865Z"
+									fill="#FD853A" />
+							</svg>
+
+							<input
+								class="discuss-registration__email i3-m-u"
+								placeholder="Enter Email Address"
+								type="text" />
+
+							<button class="ui-button i3-m-u" type="button" aria-label="send">Send</button>
+						</label>
+					</form>
+
+					<div class="discuss-box__advantages">
+						<div class="discuss-box__advantage">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M15.3899 5.20979L16.7999 8.02979C16.9899 8.41979 17.4999 8.78979 17.9299 8.86979L20.4799 9.28979C22.1099 9.55979 22.4899 10.7398 21.3199 11.9198L19.3299 13.9098C18.9999 14.2398 18.8099 14.8898 18.9199 15.3598L19.4899 17.8198C19.9399 19.7598 18.8999 20.5198 17.1899 19.4998L14.7999 18.0798C14.3699 17.8198 13.6499 17.8198 13.2199 18.0798L10.8299 19.4998C9.11994 20.5098 8.07994 19.7598 8.52994 17.8198L9.09994 15.3598C9.18994 14.8798 8.99994 14.2298 8.66994 13.8998L6.67994 11.9098C5.50994 10.7398 5.88994 9.55979 7.51994 9.27979L10.0699 8.85979C10.4999 8.78979 11.0099 8.40979 11.1999 8.01979L12.6099 5.19979C13.3799 3.67979 14.6199 3.67979 15.3899 5.20979Z"
+									fill="#292D32" />
+								<path
+									d="M8 5.75H2C1.59 5.75 1.25 5.41 1.25 5C1.25 4.59 1.59 4.25 2 4.25H8C8.41 4.25 8.75 4.59 8.75 5C8.75 5.41 8.41 5.75 8 5.75Z"
+									fill="#292D32" />
+								<path
+									d="M5 19.75H2C1.59 19.75 1.25 19.41 1.25 19C1.25 18.59 1.59 18.25 2 18.25H5C5.41 18.25 5.75 18.59 5.75 19C5.75 19.41 5.41 19.75 5 19.75Z"
+									fill="#292D32" />
+								<path
+									d="M3 12.75H2C1.59 12.75 1.25 12.41 1.25 12C1.25 11.59 1.59 11.25 2 11.25H3C3.41 11.25 3.75 11.59 3.75 12C3.75 12.41 3.41 12.75 3 12.75Z"
+									fill="#292D32" />
+							</svg>
+
+							<p class="i4-r-l">4.9/5 Average Ratings</p>
+						</div>
+
+						<div class="discuss-box__advantage">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M17.8099 5.49V6.23L14.2699 4.18C12.9299 3.41 11.0599 3.41 9.72994 4.18L6.18994 6.24V5.49C6.18994 3.24 7.41994 2 9.66994 2H14.3299C16.5799 2 17.8099 3.24 17.8099 5.49Z"
+									fill="#292D32" />
+								<path
+									d="M17.84 7.97023L17.7 7.90023L16.34 7.12023L13.52 5.49023C12.66 4.99023 11.34 4.99023 10.48 5.49023L7.66 7.11023L6.3 7.91023L6.12 8.00023C4.37 9.18023 4.25 9.40023 4.25 11.2902V15.8102C4.25 17.7002 4.37 17.9202 6.16 19.1302L10.48 21.6202C10.91 21.8802 11.45 21.9902 12 21.9902C12.54 21.9902 13.09 21.8702 13.52 21.6202L17.88 19.1002C19.64 17.9202 19.75 17.7102 19.75 15.8102V11.2902C19.75 9.40023 19.63 9.18023 17.84 7.97023ZM14.79 13.5002L14.18 14.2502C14.08 14.3602 14.01 14.5702 14.02 14.7202L14.08 15.6802C14.12 16.2702 13.7 16.5702 13.15 16.3602L12.26 16.0002C12.12 15.9502 11.89 15.9502 11.75 16.0002L10.86 16.3502C10.31 16.5702 9.89 16.2602 9.93 15.6702L9.99 14.7102C10 14.5602 9.93 14.3502 9.83 14.2402L9.21 13.5002C8.83 13.0502 9 12.5502 9.57 12.4002L10.5 12.1602C10.65 12.1202 10.82 11.9802 10.9 11.8602L11.42 11.0602C11.74 10.5602 12.25 10.5602 12.58 11.0602L13.1 11.8602C13.18 11.9902 13.36 12.1202 13.5 12.1602L14.43 12.4002C15 12.5502 15.17 13.0502 14.79 13.5002Z"
+									fill="#292D32" />
+							</svg>
+
+							<p class="i4-r-l">25+ Winning Awards</p>
+						</div>
+
+						<div class="discuss-box__advantage">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M18.54 4.11984L13.04 2.05984C12.47 1.84984 11.54 1.84984 10.97 2.05984L5.47005 4.11984C4.41005 4.51984 3.55005 5.75984 3.55005 6.88984V14.9898C3.55005 15.7998 4.08005 16.8698 4.73005 17.3498L10.23 21.4598C11.2 22.1898 12.79 22.1898 13.76 21.4598L19.26 17.3498C19.91 16.8598 20.4401 15.7998 20.4401 14.9898V6.88984C20.4501 5.75984 19.59 4.51984 18.54 4.11984ZM15.48 9.71984L11.18 14.0198C11.03 14.1698 10.84 14.2398 10.65 14.2398C10.46 14.2398 10.27 14.1698 10.12 14.0198L8.52005 12.3998C8.23005 12.1098 8.23005 11.6298 8.52005 11.3398C8.81005 11.0498 9.29005 11.0498 9.58005 11.3398L10.66 12.4198L14.43 8.64984C14.72 8.35984 15.2 8.35984 15.49 8.64984C15.78 8.93984 15.78 9.42984 15.48 9.71984Z"
+									fill="#292D32" />
+							</svg>
+
+							<p class="i4-r-l">Certified Product Designer</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section-dashboard">
+				<div class="dashboard-box">
+					<p class="s1-r-l">UX Design</p>
+
+					<svg
+						class="dashboard-box__svg"
+						width="34"
+						height="34"
+						viewBox="0 0 34 34"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M16.2422 0.000169642L21.4744 12.0833L33.9676 16.2425L21.8845 21.4746L17.7253 33.9678L12.4931 21.8847L-4.7572e-05 17.7255L12.0831 12.4933L16.2422 0.000169642Z"
+							fill="#FD853A" />
+					</svg>
+
+					<p class="s1-r-l">App Design</p>
+					<svg
+						class="dashboard-box__svg"
+						width="34"
+						height="34"
+						viewBox="0 0 34 34"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M16.2422 0.000169642L21.4744 12.0833L33.9676 16.2425L21.8845 21.4746L17.7253 33.9678L12.4931 21.8847L-4.7572e-05 17.7255L12.0831 12.4933L16.2422 0.000169642Z"
+							fill="#FD853A" />
+					</svg>
+
+					<p class="s1-r-l">Dashboard</p>
+					<svg
+						class="dashboard-box__svg"
+						width="34"
+						height="34"
+						viewBox="0 0 34 34"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M16.2422 0.000169642L21.4744 12.0833L33.9676 16.2425L21.8845 21.4746L17.7253 33.9678L12.4931 21.8847L-4.7572e-05 17.7255L12.0831 12.4933L16.2422 0.000169642Z"
+							fill="#FD853A" />
+					</svg>
+
+					<p class="s1-r-l">Wireframe</p>
+					<svg
+						class="dashboard-box__svg"
+						width="34"
+						height="34"
+						viewBox="0 0 34 34"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M16.2422 0.000169642L21.4744 12.0833L33.9676 16.2425L21.8845 21.4746L17.7253 33.9678L12.4931 21.8847L-4.7572e-05 17.7255L12.0831 12.4933L16.2422 0.000169642Z"
+							fill="#FD853A" />
+					</svg>
+
+					<p class="s1-r-l">User Research</p>
+				</div>
+			</section>
+
+			<section class="container section-post">
+				<div class="post-header">
+					<p class="post-header__title s1-b-l">From my blog post</p>
+
+					<button class="ui-button i3-b-l" aria-label="see all">See All</button>
+				</div>
+
+				<div class="post-container">
+					<div class="post-content">
+						<div class="ui-card__container">
+							<img class="post-card__img" src="/images/post/video.png" />
+
+							<svg
+								class="ui-card__arrow"
+								xmlns="http://www.w3.org/2000/svg"
+								width="114"
+								height="114"
+								viewBox="0 0 114 114"
+								fill="none">
+								<rect
+									x="4.9831e-06"
+									y="114"
+									width="114"
+									height="114"
+									rx="57"
+									transform="rotate(-90 4.9831e-06 114)"
+									fill="currentColor" />
+								<path
+									d="M42 72L72 42"
+									stroke="white"
+									stroke-width="4"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									d="M42 42H72V72"
+									stroke="white"
+									stroke-width="4"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+							</svg>
+						</div>
+
+						<button class="post-content__button i3-r-i" type="button" aria-label="ui ux design">
+							UI/ UX Design
+						</button>
+
+						<div class="post-content__info">
+							<div>
+								<svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<circle cx="4.5" cy="4.5" r="4.5" fill="#FD853A" />
+								</svg>
+
+								<p class="i3-r-i">Jayesh Patil</p>
+							</div>
+
+							<div>
+								<svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<circle cx="4.5" cy="4.5" r="4.5" fill="#FD853A" />
+								</svg>
+
+								<p class="i3-r-i">10 Nov, 2023</p>
+							</div>
+						</div>
+
+						<p class="post-content__description s4-s-l">Design Unraveled: Behind the Scenes of UI/UX Magic</p>
+					</div>
+
+					<div class="post-content">
+						<div class="ui-card__container">
+							<img class="post-card__img" src="/images/post/sugee.png" />
+
+							<svg
+								class="ui-card__arrow"
+								xmlns="http://www.w3.org/2000/svg"
+								width="114"
+								height="114"
+								viewBox="0 0 114 114"
+								fill="none">
+								<rect
+									x="4.9831e-06"
+									y="114"
+									width="114"
+									height="114"
+									rx="57"
+									transform="rotate(-90 4.9831e-06 114)"
+									fill="currentColor" />
+								<path
+									d="M42 72L72 42"
+									stroke="white"
+									stroke-width="4"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									d="M42 42H72V72"
+									stroke="white"
+									stroke-width="4"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+							</svg>
+						</div>
+
+						<button class="post-content__button i3-r-i" type="button" aria-label="app design">
+							App Design
+						</button>
+
+						<div class="post-content__info">
+							<div>
+								<svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<circle cx="4.5" cy="4.5" r="4.5" fill="#FD853A" />
+								</svg>
+
+								<p class="i3-r-i">Jayesh Patil</p>
+							</div>
+
+							<div>
+								<svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<circle cx="4.5" cy="4.5" r="4.5" fill="#FD853A" />
+								</svg>
+
+								<p class="i3-r-i">09 Oct, 2023</p>
+							</div>
+						</div>
+
+						<p class="post-content__description s4-s-l">Sugee: Loan Management System for Rural Sector.</p>
+					</div>
+
+					<div class="post-content">
+						<div class="ui-card__container">
+							<img class="post-card__img" src="/images/post/trade.png" />
+
+							<svg
+								class="ui-card__arrow"
+								xmlns="http://www.w3.org/2000/svg"
+								width="114"
+								height="114"
+								viewBox="0 0 114 114"
+								fill="none">
+								<rect
+									x="4.9831e-06"
+									y="114"
+									width="114"
+									height="114"
+									rx="57"
+									transform="rotate(-90 4.9831e-06 114)"
+									fill="currentColor" />
+								<path
+									d="M42 72L72 42"
+									stroke="white"
+									stroke-width="4"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									d="M42 42H72V72"
+									stroke="white"
+									stroke-width="4"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+							</svg>
+						</div>
+
+						<button class="post-content__button i3-r-i" type="button" aria-label="app design">
+							App Design
+						</button>
+
+						<div class="post-content__info">
+							<div>
+								<svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<circle cx="4.5" cy="4.5" r="4.5" fill="#FD853A" />
+								</svg>
+
+								<p class="i3-r-i">Jayesh Patil</p>
+							</div>
+
+							<div>
+								<svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<circle cx="4.5" cy="4.5" r="4.5" fill="#FD853A" />
+								</svg>
+
+								<p class="i3-r-i">13 Aug, 2023</p>
+							</div>
+						</div>
+
+						<p class="post-content__description s4-s-l">
+							Cinetrade: Innovative way to invest in Digital Media
+						</p>
+					</div>
+				</div>
+			</section>
 		</main>
+
+		<footer class="container">
+			<div class="footer-container">
+				<div class="footer-apex">
+					<p class="footer-apex__title h3-s-l">Lets Connect there</p>
+
+					<button class="ui-button i1-m-l" type="button" aria-label="hire me">
+						Hire me
+						<svg
+							class="ui-button__svg"
+							width="42"
+							height="42"
+							viewBox="0 0 42 42"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M12.25 29.75L29.75 12.25"
+								stroke="white"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round" />
+							<path
+								d="M12.25 12.25H29.75V29.75"
+								stroke="white"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round" />
+						</svg>
+					</button>
+				</div>
+
+				<div class="footer-line"></div>
+
+				<div class="footer-content">
+					<div class="footer-content__container">
+						<div class="footer-logo">
+							<svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect width="46" height="46" rx="23" fill="#FD853A" />
+								<path
+									d="M35.1944 26.5953C34.1017 27.7882 32.7602 28.526 31.1371 28.5885C28.0722 28.7063 25.6997 26.9061 25.4059 24.6538C24.8212 20.1703 27.7404 17.4112 30.9375 17.4112C32.5643 17.4112 33.7753 18.0328 34.8504 19.0293L37.6553 15.8705C36.1332 14.3661 33.7922 13 30.9375 13C28.1735 13 25.6862 13.914 23.8 15.6215V13.4076H9.90002V17.6873H18.6941V24.4952C18.6941 27.5861 17.517 28.5885 15.2262 28.5885C13.7383 28.5885 12.2159 27.7186 10.9276 26.1089L8 29.2749C9.96306 32.0211 12.8978 33 15.3954 33C19.2608 33 21.5638 31.5884 22.7551 29.4611C24.6941 31.801 27.5364 33 30.6114 33C33.6424 33 36.1623 31.8625 38 29.6852L35.1944 26.5953Z"
+									fill="white" />
+							</svg>
+							<svg
+								class="footer-logo__inscription"
+								width="83"
+								height="20"
+								viewBox="0 0 83 20"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_5203_47)">
+									<path
+										d="M0 15.9905L2.38046 13.3938C3.42546 14.7161 4.66067 15.4308 5.87012 15.432C7.73027 15.432 8.68769 14.6111 8.68927 12.0718L8.69561 3.69114L1.55342 3.6839L1.5562 0.165588L12.8439 0.174441L12.8348 12.4171C12.832 16.0509 11.0642 19.0569 6.00486 19.0541C3.97589 19.0529 1.59305 18.2481 0 15.9905Z"
+										fill="white" />
+									<path
+										d="M15.8439 9.70423C15.8486 3.55936 19.6878 -0.00402074 24.5866 3.4047e-06C26.9049 3.4047e-06 28.8059 1.12435 30.0419 2.36177L27.7609 4.95534C26.889 4.13521 25.9055 3.62375 24.5839 3.62254C21.9878 3.62254 20.0904 5.85674 20.0881 9.56942C20.0849 13.3795 21.9787 15.592 24.7376 15.596C26.0565 15.596 27.1454 14.9408 28.0335 13.9622L30.3097 16.5014C28.817 18.2897 26.7698 19.2217 24.3081 19.2197C19.7623 19.2141 15.8391 15.9582 15.8439 9.70423Z"
+										fill="white" />
+									<path
+										d="M47.7503 18.8839L43.6203 11.4642C45.5732 10.5704 46.8805 8.84406 46.8825 6.12093C46.886 1.71127 43.6991 0.343864 39.8251 0.340644L33.3237 0.335815L33.3098 18.8714L37.4569 18.8746L37.4617 12.207H39.6357L43.1202 18.8771L47.7503 18.8839ZM37.468 3.66861H39.4855C41.6603 3.66861 42.8265 4.28632 42.8249 6.1161C42.8249 7.93058 41.6563 8.87787 39.4815 8.87626H37.464L37.468 3.66861Z"
+										fill="white" />
+									<path
+										d="M50.7649 0.337219L62.8872 0.346475L62.8844 3.86358L54.9017 3.85754L54.8989 7.57505L61.6813 7.58028L61.6785 11.0974L54.8961 11.0921L54.893 15.3577L63.1566 15.3642L63.1539 18.8825L50.7502 18.8728L50.7649 0.337219Z"
+										fill="white" />
+									<path
+										d="M78.12 18.8781L82.5084 18.8817L76.8277 0.341665L71.8666 0.338043L66.1566 18.8692L70.3929 18.8724L71.5124 14.4648L77.0159 14.4688L78.12 18.8781ZM72.3422 11.1968L72.7781 9.48975C73.2425 7.63865 73.7525 5.46883 74.2019 3.51309H74.3141C74.7532 5.46963 75.3076 7.64146 75.7696 9.49217L76.1976 11.2L72.3422 11.1968Z"
+										fill="white" />
+								</g>
+								<defs>
+									<clipPath id="clip0_5203_47">
+										<rect width="82.5084" height="19.2197" fill="white" />
+									</clipPath>
+								</defs>
+							</svg>
+							<div class="footer-logo__hover">
+								<p class="i4-r-l">Made by</p>
+								<p class="i3-m-l">Jayesh Patil</p>
+							</div>
+						</div>
+
+						<p class="i3-r-l footer-content__description">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue interdum ligula a dignissim.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas
+							lobortis.
+						</p>
+						<div class="footer-socials">
+							<a
+								class="footer-social"
+								href="#"
+								aria-label="facebook"
+								target="_blank"
+								rel="nofollow noopener noreferrer">
+								<svg
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M22 16.19C22 19.83 19.83 22 16.19 22H15C14.45 22 14 21.55 14 21V15.23C14 14.96 14.22 14.73 14.49 14.73L16.25 14.7C16.39 14.69 16.51 14.59 16.54 14.45L16.89 12.54C16.92 12.36 16.78 12.19 16.59 12.19L14.46 12.22C14.18 12.22 13.96 12 13.95 11.73L13.91 9.28C13.91 9.12 14.04 8.98001 14.21 8.98001L16.61 8.94C16.78 8.94 16.91 8.81001 16.91 8.64001L16.87 6.23999C16.87 6.06999 16.74 5.94 16.57 5.94L13.87 5.98001C12.21 6.01001 10.89 7.37 10.92 9.03L10.97 11.78C10.98 12.06 10.76 12.28 10.48 12.29L9.28 12.31C9.11 12.31 8.98001 12.44 8.98001 12.61L9.01001 14.51C9.01001 14.68 9.14 14.81 9.31 14.81L10.51 14.79C10.79 14.79 11.01 15.01 11.02 15.28L11.11 20.98C11.12 21.54 10.67 22 10.11 22H7.81C4.17 22 2 19.83 2 16.18V7.81C2 4.17 4.17 2 7.81 2H16.19C19.83 2 22 4.17 22 7.81V16.19Z"
+										fill="white" />
+								</svg>
+							</a>
+
+							<a
+								class="footer-social"
+								href="#"
+								aria-label="youtube"
+								target="_blank"
+								rel="nofollow noopener noreferrer"
+								><svg
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M17 4H7C4 4 2 6 2 9V15C2 18 4 20 7 20H17C20 20 22 18 22 15V9C22 6 20 4 17 4ZM13.89 13.03L11.42 14.51C10.42 15.11 9.59998 14.65 9.59998 13.48V10.51C9.59998 9.34001 10.42 8.88001 11.42 9.48001L13.89 10.96C14.84 11.54 14.84 12.46 13.89 13.03Z"
+										fill="white" />
+								</svg>
+							</a>
+							<a
+								class="footer-social"
+								href="#"
+								aria-label="whats up"
+								target="_blank"
+								rel="nofollow noopener noreferrer"
+								><svg
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M21.98 11.41C21.64 5.60995 16.37 1.13996 10.3 2.13996C6.12004 2.82996 2.77005 6.21994 2.12005 10.3999C1.74005 12.8199 2.24007 15.1099 3.33007 16.9999L2.44006 20.3099C2.24006 21.0599 2.93004 21.7399 3.67004 21.5299L6.93005 20.63C8.41005 21.5 10.14 21.9999 11.99 21.9999C17.63 21.9999 22.31 17.03 21.98 11.41ZM16.8801 15.7199C16.7901 15.8999 16.68 16.07 16.54 16.23C16.29 16.5 16.02 16.7 15.72 16.82C15.42 16.95 15.09 17.01 14.74 17.01C14.23 17.01 13.68 16.89 13.11 16.64C12.53 16.39 11.9601 16.0599 11.3901 15.6499C10.8101 15.2299 10.2701 14.7599 9.75005 14.2499C9.23005 13.7299 8.77003 13.1799 8.35003 12.6099C7.94003 12.0399 7.61005 11.4699 7.37005 10.8999C7.13005 10.3299 7.01006 9.77996 7.01006 9.25996C7.01006 8.91996 7.07006 8.58996 7.19006 8.28996C7.31006 7.97996 7.50007 7.69996 7.77007 7.44996C8.09007 7.12996 8.44005 6.97996 8.81005 6.97996C8.95005 6.97996 9.09002 7.00995 9.22002 7.06995C9.35002 7.12995 9.47005 7.21995 9.56005 7.34995L10.72 8.98994C10.81 9.11994 10.88 9.22994 10.92 9.33994C10.97 9.44994 10.99 9.54994 10.99 9.64994C10.99 9.76994 10.9501 9.88996 10.8801 10.01C10.8101 10.13 10.72 10.2499 10.6 10.3699L10.22 10.7699C10.16 10.8299 10.1401 10.8899 10.1401 10.9699C10.1401 11.0099 10.15 11.0499 10.16 11.0899C10.18 11.1299 10.1901 11.16 10.2001 11.1899C10.2901 11.36 10.45 11.5699 10.67 11.8299C10.9 12.0899 11.1401 12.3599 11.4001 12.6199C11.6701 12.8899 11.9301 13.1299 12.2001 13.3599C12.4601 13.5799 12.68 13.73 12.85 13.82C12.88 13.83 12.9101 13.8499 12.9401 13.8599C12.9801 13.8799 13.0201 13.88 13.0701 13.88C13.1601 13.88 13.2201 13.85 13.2801 13.79L13.66 13.41C13.79 13.28 13.9101 13.19 14.0201 13.13C14.1401 13.06 14.2501 13.0199 14.3801 13.0199C14.4801 13.0199 14.5801 13.0399 14.6901 13.0899C14.8001 13.1399 14.92 13.2 15.04 13.29L16.7001 14.4699C16.8301 14.5599 16.92 14.67 16.98 14.79C17.03 14.92 17.0601 15.0399 17.0601 15.1799C17.0001 15.3499 16.9601 15.5399 16.8801 15.7199Z"
+										fill="white" />
+								</svg>
+							</a>
+							<a
+								class="footer-social"
+								href="#"
+								aria-label="instagram"
+								target="_blank"
+								rel="nofollow noopener noreferrer">
+								<svg
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M16.19 2H7.81C4.17 2 2 4.17 2 7.81V16.18C2 19.83 4.17 22 7.81 22H16.18C19.82 22 21.99 19.83 21.99 16.19V7.81C22 4.17 19.83 2 16.19 2ZM12 15.88C9.86 15.88 8.12 14.14 8.12 12C8.12 9.86 9.86 8.12 12 8.12C14.14 8.12 15.88 9.86 15.88 12C15.88 14.14 14.14 15.88 12 15.88ZM17.92 6.88C17.87 7 17.8 7.11 17.71 7.21C17.61 7.3 17.5 7.37 17.38 7.42C17.26 7.47 17.13 7.5 17 7.5C16.73 7.5 16.48 7.4 16.29 7.21C16.2 7.11 16.13 7 16.08 6.88C16.03 6.76 16 6.63 16 6.5C16 6.37 16.03 6.24 16.08 6.12C16.13 5.99 16.2 5.89 16.29 5.79C16.52 5.56 16.87 5.45 17.19 5.52C17.26 5.53 17.32 5.55 17.38 5.58C17.44 5.6 17.5 5.63 17.56 5.67C17.61 5.7 17.66 5.75 17.71 5.79C17.8 5.89 17.87 5.99 17.92 6.12C17.97 6.24 18 6.37 18 6.5C18 6.63 17.97 6.76 17.92 6.88Z"
+										fill="white" />
+								</svg>
+							</a>
+
+							<a
+								class="footer-social"
+								href="#"
+								aria-label="twitter"
+								target="_blank"
+								rel="nofollow noopener noreferrer"
+								><svg
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M20.1066 8.63423C20.0826 8.41077 20.0546 8.23168 20.0316 8.10405L21.9161 5.27735C22.0345 5.09962 22.027 4.86625 21.8974 4.6965C21.7677 4.52675 21.5446 4.45811 21.3419 4.52566L18.7212 5.39922C18.5827 5.19265 18.3773 4.92019 18.1036 4.64645C17.5491 4.09195 16.6794 3.5 15.5 3.5C14.2775 3.5 13.3727 3.84218 12.7266 4.40395C12.0872 4.95995 11.75 5.68869 11.5775 6.37873C11.4052 7.06789 11.3898 7.74611 11.4147 8.24372C11.422 8.38883 11.4327 8.52017 11.4444 8.63384C10.1893 8.90075 8.87591 8.49188 7.58934 7.72835C6.17064 6.88641 4.87015 5.66301 3.85358 4.64645C3.71259 4.50546 3.50131 4.46171 3.31593 4.53513C3.13054 4.60855 3.0065 4.78509 3.00027 4.98438C2.87287 9.0612 3.71338 13.9958 7.51119 16.498C5.9138 17.3622 4.34766 17.7652 2.43801 18.0039C2.21938 18.0312 2.04441 18.1984 2.00721 18.4156C1.97001 18.6328 2.07935 18.8487 2.27642 18.9472C7.43512 21.5266 14.1199 21.3401 17.9 16.3C19.467 14.2107 19.9921 12.1159 20.1233 10.5415C20.1888 9.7552 20.1563 9.09808 20.1066 8.63423Z"
+										fill="white" />
+								</svg>
+							</a>
+						</div>
+					</div>
+
+					<div class="footer-content__container">
+						<p class="footer-content__title i3-s-l">Navigation</p>
+
+						<a
+							class="footer-content__href i5-r-l"
+							href="#"
+							rel="nofollow noopener noreferrer"
+							target="_blank"
+							aria-label="home"
+							>Home</a
+						>
+
+						<a
+							class="footer-content__href i5-r-l"
+							href="#"
+							rel="nofollow noopener noreferrer"
+							target="_blank"
+							aria-label="about us"
+							>About Us</a
+						>
+
+						<a
+							class="footer-content__href i5-r-l"
+							href="#"
+							rel="nofollow noopener noreferrer"
+							target="_blank"
+							aria-label="service"
+							>Service</a
+						>
+
+						<a
+							class="footer-content__href i5-r-l"
+							href="#"
+							rel="nofollow noopener noreferrer"
+							target="_blank"
+							aria-label="resume"
+							>Resume</a
+						>
+
+						<a
+							class="footer-content__href i5-r-l"
+							href="#"
+							rel="nofollow noopener noreferrer"
+							target="_blank"
+							aria-label="project"
+							>Project</a
+						>
+					</div>
+
+					<div class="footer-content__container">
+						<p class="footer-content__title i3-s-l">Contact</p>
+						<a
+							class="footer-content__href i5-r-l"
+							href="tel:+91 7738443636"
+							rel="nofollow noopener noreferrer"
+							target="_blank"
+							aria-label="number"
+							>+91 7738443636</a
+						>
+
+						<a
+							class="footer-content__href i5-r-l"
+							href="mailto:Jaycrea36@gmail.com"
+							rel="nofollow noopener noreferrer"
+							target="_blank"
+							aria-label="email"
+							>Jaycrea36@gmail.com</a
+						>
+
+						<a
+							class="footer-content__href i5-r-l"
+							href="mailto:Portfolio-jcrea.com"
+							rel="nofollow noopener noreferrer"
+							target="_blank"
+							aria-label="site"
+							>Portfolio-jcrea.com</a
+						>
+					</div>
+
+					<div class="footer-content__container">
+						<p class="footer-content__title i3-s-l">Get the Latest information</p>
+
+						<form class="footer-content__bar">
+							<label>
+								<input class="i3-m-u footer-content__email" placeholder="Email Address" type="text" />
+
+								<button class="footer-content__button" type="button" aria-label="arrow">
+									<svg
+										class="footer-content__svg"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M6.29602 2.90603C3.91012 1.80484 1.36183 4.08567 2.19279 6.57859L3.45424 10.3197C3.59136 10.7263 3.97267 11.0002 4.40182 11.0002H13C13.5523 11.0002 14 11.4479 14 12.0002C14 12.5524 13.5523 13.0002 13 13.0002H4.40182C3.97267 13.0002 3.59136 13.274 3.45424 13.6806L2.19281 17.4217C1.36183 19.9147 3.91012 22.1955 6.29603 21.0943L20.0983 14.7241C22.422 13.6516 22.422 10.3488 20.0983 9.27632L6.29602 2.90603Z"
+											fill="#FCFCFD" />
+									</svg>
+								</button>
+							</label>
+						</form>
+					</div>
+				</div>
+
+				<div class="footer-line"></div>
+
+				<div class="footer-copyright">
+					<p class="i3-r-l">Copyright© 2023 Jayesh. All Rights Reserved.</p>
+
+					<p class="i3-r-l">User Terms & Conditions | Privacy Policy</p>
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>

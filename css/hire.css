@@ -47,6 +47,9 @@
   justify-content: center;
 }
 
+.description__title {
+  color: var(--color-title);
+}
 
 .description__subtitle {
   color: var(--color-description)

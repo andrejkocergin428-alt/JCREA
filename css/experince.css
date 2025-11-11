@@ -1,4 +1,4 @@
-.experince {
+.section-experince {
   position: relative;
   width: 100%;
   padding: 85px 0 150px 0;
@@ -10,6 +10,7 @@
   justify-content: center;
   margin-bottom: 85px;
   gap: 15px;
+  color: var(--color-title);
 }
 
 .experince-image {

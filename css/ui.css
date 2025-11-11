@@ -1,4 +1,4 @@
-.ui-burger__line {
+.ui-burger__svg {
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -23,17 +23,36 @@
   overflow: hidden;
   top: 50%;
   right: 50%;
-  width: 100.3%;
+  width: 89%;
   transform: translateX(50%);
   gap: 8px;
   opacity: 0;
   padding: 40px;
   z-index: 1;
+}
 
+.ui-line {
+  border: 1px solid var(--color-white);
+  width: 25px;
+  z-index: 10
 }
 
 .ui-burger input:checked~.ui-burger__box {
   opacity: 1;
+}
+
+.ui-color {
+  color: var(--color-main)
+}
+
+.ui-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  z-index: -2;
+  top: 0;
+  left: 0;
 }
 
 .ui-button {
@@ -46,6 +65,17 @@
   border: 1px solid transparent;
   border-radius: 60px;
   transition: 0.3s all;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ui-button__svg {
+  transition: 0.3s all;
+}
+
+.ui-button:hover .ui-button__svg {
+  transform: rotate(45deg);
 }
 
 .ui-button:hover {
@@ -86,8 +116,58 @@
   margin-bottom: 50px;
 }
 
+.ui-card__container {
+  cursor: pointer;
+  position: relative;
+
+}
+
+.ui-card__container:hover .ui-card__arrow {
+  color: var(--color-main);
+}
+
+.ui-card__container:hover .service-card {
+  background-color: var(--color-main);
+}
+
+.ui-card__container:hover .card__images {
+  transform: scale(1.1);
+}
+
+.ui-card__arrow {
+  cursor: pointer;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  color: #1D2939;
+  transition: 0.4s all;
+}
+
+@media (max-width: 768px) {
+  .ui-card__arrow {
+    width: 60px;
+    height: 60px;
+  }
+}
+
 @media (max-width: 500px) {
   .ui-burger {
     display: block;
+  }
+
+  .ui-button {
+    padding: 10px 15px;
+  }
+
+  .section-portfolio .ui-card__arrow {
+    display: none;
+  }
+
+  .ui-card__arrow {
+    width: 80px;
+    height: 80px;
   }
 }

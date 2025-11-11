@@ -1,0 +1,146 @@
+.section-results {
+  padding: 120px 0 185px 0;
+  overflow: hidden;
+}
+
+.results-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
+  color: var(--color-white);
+  margin-bottom: 94px;
+}
+
+.results-header__subtitle {
+  width: 750px;
+  text-align: center;
+}
+
+.results-header__svg {
+  position: absolute;
+}
+
+.results-header__eyelashes {
+  right: 34%;
+  top: -8px;
+}
+
+.results-header__star--first {
+  left: 23%;
+  bottom: -15px;
+}
+
+.results-header__star--second {
+  right: 22%;
+  top: 50%;
+  transform: rotate(-40deg);
+}
+
+.results-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  overflow: hidden;
+  gap: 24px;
+}
+
+.results-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 21px;
+  backdrop-filter: blur(12px);
+  background-color: var(--color-cards);
+  border: 2px solid var(--color-cards-border);
+  border-radius: 24px;
+  color: var(--color-white);
+  min-width: 780px;
+  min-height: 265px;
+  gap: 14px;
+  cursor: pointer;
+}
+
+.results-card:hover {
+  border: 2px solid var(--color-background-section);
+}
+
+.results-card__svg {
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+
+.results-card__developer {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.results-card__grade {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.results-card__scroll {
+  position: relative;
+  width: 100%;
+  overflow: auto;
+  touch-action: auto;
+}
+
+@media (max-width: 768px) {
+  .section-results {
+    padding: 60px 0 80px 0;
+  }
+
+  .results-header__eyelashes {
+    display: none;
+  }
+
+  .results-header__star--first {
+    display: none;
+  }
+
+  .results-header__star--second {
+    display: none;
+  }
+
+  .results-header__subtitle {
+    width: 500px;
+  }
+
+  .results-header {
+    margin-bottom: 40px;
+    gap: 4px;
+  }
+
+  .results-card {
+    min-width: 500px;
+  }
+}
+
+@media (max-width: 500px) {
+  .section-results {
+    padding: 40px 0 60px 0;
+  }
+
+  .results-header__subtitle {
+    width: 300px;
+  }
+
+  .results-header {
+    margin-bottom: 20px;
+    gap: 4px;
+  }
+
+  .results-card {
+    min-width: 350px;
+  }
+
+  .results-header__title {
+    text-align: center;
+  }
+}
