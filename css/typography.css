@@ -207,20 +207,17 @@
 
 @media (max-width: 768px) {
 
-  .i3-r-l,
-  .i3-m-l,
-  .i3-b-l,
-  .i3-r-i {
-    font-size: var(--font-size-i3-m);
-  }
-
-  .i4-r-l,
-  .i4-r-u {
-    font-size: var(--font-size-i4-m);
-  }
-
   .h1-s-u {
     font-size: var(--font-size-h1-m);
+  }
+
+  .h2-b-l {
+    font-size: var(--font-size-h2-m);
+  }
+
+  .h3-m-l,
+  .h3-s-l {
+    font-size: var(--font-size-h3-m);
   }
 
   .s1-b-u,
@@ -230,9 +227,12 @@
     font-size: var(--font-size-s1-m);
   }
 
-  .i1-m-l,
-  .i1-l-l {
-    font-size: var(--font-size-i1-m);
+  .s2-s-l {
+    font-size: var(--font-size-s2-m);
+  }
+
+  .s3-m-l {
+    font-size: var(--font-size-s3-m);
   }
 
   .s4-m-l,
@@ -240,13 +240,9 @@
     font-size: var(--font-size-s4-m);
   }
 
-  .h3-m-l,
-  .h3-s-l {
-    font-size: var(--font-size-h3-m);
-  }
-
-  .s2-s-l {
-    font-size: var(--font-size-s2-m);
+  .i1-m-l,
+  .i1-l-l {
+    font-size: var(--font-size-i1-m);
   }
 
   .i2-r-l,
@@ -254,11 +250,20 @@
     font-size: var(--font-size-i2-m);
   }
 
-  .s3-m-l {
-    font-size: var(--font-size-s3-m);
+  .i3-r-l,
+  .i3-m-l,
+  .i3-b-l,
+  .i3-r-i,
+  .i3-s-l {
+    font-size: var(--font-size-i3-m);
   }
 
-  .h2-b-l {
-    font-size: var(--font-size-h2-m);
+  .i4-r-l,
+  .i4-r-u {
+    font-size: var(--font-size-i4-m);
+  }
+
+  .i5-r-l {
+    font-size: var(--font-size-i5-m);
   }
 }

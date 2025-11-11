@@ -6,7 +6,7 @@ footer {
 .footer-container {
   display: flex;
   flex-direction: column;
-  padding: 25px 0;
+  padding: 50px 0;
   gap: 55px;
   color: var(--color-white);
 }
@@ -15,7 +15,6 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 150px;
 }
 
 .footer-line {
@@ -134,4 +133,93 @@ footer {
 
 .footer-content__container:first-child {
   justify-content: space-between;
+}
+
+@media (max-width:768px) {
+  .footer-content__description {
+    width: 250px;
+  }
+
+  .footer-apex {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .footer-content {
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+
+  }
+
+  .footer-copyright {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .footer-socials {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-logo__hover {
+    animation: inscription-secondary 8s linear infinite;
+    transition: 0.3s all;
+  }
+
+  .footer-logo__inscription {
+    animation: inscription-primary 8s linear infinite;
+    transition: 0.3s all;
+  }
+}
+
+@media (max-width:500px) {
+  .footer-copyright {
+    text-align: center;
+  }
+
+  .footer-apex {
+    text-align: center;
+  }
+
+  .footer-content__title {
+    color: var(--color-main);
+    margin-bottom: 15px;
+  }
+}
+
+@keyframes inscription-secondary {
+
+  0%,
+  25% {
+    opacity: 0;
+  }
+
+  50%,
+  75% {
+    opacity: 1;
+  }
+
+  85%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes inscription-primary {
+
+  0%,
+  15% {
+    opacity: 1;
+  }
+
+  25%,
+  85% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
