@@ -31,6 +31,7 @@
 			href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
 			rel="stylesheet" />
 		<link href="https://fonts.cdnfonts.com/css/lufga" rel="stylesheet" />
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 	</head>
 	<body>
 		<header class="container container--header">
@@ -211,15 +212,17 @@
 
 				<div class="service-container">
 					<div class="services-header">
-						<p class="services-header__title s1-m-l">My<span class="ui-color s1-m-l">Services</span></p>
+						<p class="services-header__title s1-m-l" data-aos="fade-right">
+							My<span class="ui-color s1-m-l">Services</span>
+						</p>
 
-						<p class="services-header__subtitle i3-m-l">
+						<p class="services-header__subtitle i3-m-l" data-aos="fade-left">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus nunc, posuere in justo
 							vulputate, bibendum sodales
 						</p>
 					</div>
 
-					<div class="section-service__cards">
+					<div class="section-service__cards" data-aos="fade-up">
 						<div class="ui-card__container">
 							<div class="service-card">
 								<p class="service-card__title s4-m-l">UI/UX Design</p>
@@ -382,16 +385,18 @@
 
 			<section class="section-experince">
 				<div class="container">
-					<p class="experince-title h3-m-l">My <span class="ui-color">Work Experince</span></p>
+					<p class="experince-title h3-m-l" data-aos="zoom-in">
+						My <span class="ui-color">Work Experince</span>
+					</p>
 
 					<div class="experince-work">
-						<div class="experince-card">
+						<div class="experince-card" data-aos="fade-right">
 							<p class="s2-s-l">Cognizant, Mumbai</p>
 
 							<p class="i2-r-l experince-primary__information--color">Sep 2016- July 2020</p>
 						</div>
 
-						<div class="experince-card">
+						<div class="experince-card" data-aos="fade-left">
 							<p class="s2-s-l">Experince Designer</p>
 
 							<p class="i2-r-l experince-primary__information--color lorem">
@@ -400,13 +405,13 @@
 							</p>
 						</div>
 
-						<div class="experince-card">
+						<div class="experince-card" data-aos="fade-right">
 							<p class="s2-s-l">Sugee Pvt limited, Mumbai</p>
 
 							<p class="i2-r-l experince-primary__information--color">Sep 2020- July 2023</p>
 						</div>
 
-						<div class="experince-card">
+						<div class="experince-card" data-aos="fade-left">
 							<p class="s2-s-l">UI/UX Designer</p>
 
 							<p class="i2-r-l experince-primary__information--color lorem">
@@ -415,13 +420,13 @@
 							</p>
 						</div>
 
-						<div class="experince-card">
+						<div class="experince-card" data-aos="fade-right">
 							<p class="s2-s-l">Cinetstox, Mumbai</p>
 
 							<p class="i2-r-l experince-primary__information--color">Sep 2023</p>
 						</div>
 
-						<div class="experince-card"><p class="s2-s-l">Lead UX Designer</p></div>
+						<div class="experince-card" data-aos="fade-left"><p class="s2-s-l">Lead UX Designer</p></div>
 
 						<img class="experince-image" src="/images/icons/chain.svg" alt="chain" />
 					</div>
@@ -430,13 +435,13 @@
 
 			<section class="hire-container">
 				<div class="container section-hire">
-					<div class="hire-image__container">
+					<div class="hire-image__container" data-aos="fade-right">
 						<img class="hire-woman" src="/images/hire/woman-hire.png" alt="woman" />
 
 						<img class="hire-ellipse" src="/images/hire/ellipse.png" alt="ellipse" />
 					</div>
 
-					<div class="hire-description">
+					<div class="hire-description" data-aos="fade-left">
 						<p class="description__title h3-s-l">Why <span class="ui-color">Hire Me</span>?</p>
 
 						<p class="i3-r-l lorem description__subtitle">
@@ -467,15 +472,17 @@
 			<section class="section-portfolio">
 				<div class="container">
 					<div class="portfolio-header">
-						<p class="portfolio-title h3-s-l">
+						<p class="portfolio-title h3-s-l" data-aos="fade-right">
 							Lets have a look at my <span class="ui-color">Portfolio</span>
 						</p>
 
-						<button class="ui-button i3-b-l" type="button" aria-label="see all">See All</button>
+						<button class="ui-button i3-b-l" type="button" aria-label="see all" data-aos="fade-left">
+							See All
+						</button>
 					</div>
 
 					<div class="portfolio-main__container">
-						<div class="portfolio-main__cards">
+						<div class="portfolio-main__cards" data-aos="fade-up">
 							<div class="portfolio-card">
 								<img
 									class="portfolio-card__img"
@@ -551,7 +558,7 @@
 						</div>
 					</div>
 
-					<div class="ui-pagination pagination--portfolio">
+					<div class="ui-pagination pagination--portfolio" data-aos="zoom-in">
 						<label class="ui-bullet"
 							><input type="radio" name="navigation-portfolio" value="" checked />
 							<div class="ui-bullet__active"></div
@@ -573,7 +580,7 @@
 						></label>
 					</div>
 
-					<div class="portfolio-footer">
+					<div class="portfolio-footer" data-aos="zoom-out">
 						<div class="portfolio-footer__box">
 							<div class="portfolio-footer__gradient"></div>
 
@@ -659,7 +666,7 @@
 					src="/images/background/section-services.jpg"
 					alt="food" />
 
-				<div class="results-header">
+				<div class="results-header" data-aos="zoom-in">
 					<svg
 						class="results-header__eyelashes results-header__svg"
 						width="32"
@@ -710,7 +717,7 @@
 					</p>
 				</div>
 
-				<div class="results-cards">
+				<div class="results-cards" data-aos="fade-up">
 					<div class="results-card">
 						<svg
 							class="results-card__svg"
@@ -897,7 +904,7 @@
 				</div>
 			</section>
 
-			<section class="container section-discuss">
+			<section class="container section-discuss" data-aos="fade-up">
 				<p class="discuss__title h3-s-l">
 					Have an Awsome Project Idea? <span class="ui-color">Let’s Discuss</span>
 				</p>
@@ -973,7 +980,7 @@
 				</div>
 			</section>
 
-			<section class="section-dashboard">
+			<section class="section-dashboard" data-aos="fade-down">
 				<div class="dashboard-box">
 					<p class="s1-r-l">UX Design</p>
 
@@ -1034,12 +1041,12 @@
 
 			<section class="container section-post">
 				<div class="post-header">
-					<p class="post-header__title s1-b-l">From my blog post</p>
+					<p class="post-header__title s1-b-l" data-aos="fade-right">From my blog post</p>
 
-					<button class="ui-button i3-b-l" aria-label="see all">See All</button>
+					<button class="ui-button i3-b-l" aria-label="see all" data-aos="fade-left">See All</button>
 				</div>
 
-				<div class="post-container">
+				<div class="post-container" data-aos="fade-up">
 					<div class="post-content">
 						<div class="ui-card__container">
 							<img class="post-card__img" src="/images/post/video.png" />
@@ -1225,9 +1232,9 @@
 		<footer class="container">
 			<div class="footer-container">
 				<div class="footer-apex">
-					<p class="footer-apex__title h3-s-l">Lets Connect there</p>
+					<p class="footer-apex__title h3-s-l" data-aos="fade-right">Lets Connect there</p>
 
-					<button class="ui-button i1-m-l" type="button" aria-label="hire me">
+					<button class="ui-button i1-m-l" type="button" aria-label="hire me" data-aos="fade-left">
 						Hire me
 						<svg
 							class="ui-button__svg"
@@ -1252,9 +1259,9 @@
 					</button>
 				</div>
 
-				<div class="footer-line"></div>
+				<div class="footer-line" data-aos="zoom-out"></div>
 
-				<div class="footer-content">
+				<div class="footer-content" data-aos="zoom-in">
 					<div class="footer-content__container">
 						<div class="footer-logo">
 							<svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1499,14 +1506,18 @@
 					</div>
 				</div>
 
-				<div class="footer-line"></div>
+				<div class="footer-line" data-aos="zoom-out"></div>
 
 				<div class="footer-copyright">
-					<p class="i3-r-l">Copyright© 2023 Jayesh. All Rights Reserved.</p>
+					<p class="i3-r-l" data-aos="fade-right">Copyright© 2023 Jayesh. All Rights Reserved.</p>
 
-					<p class="i3-r-l">User Terms & Conditions | Privacy Policy</p>
+					<p class="i3-r-l" data-aos="fade-left">User Terms & Conditions | Privacy Policy</p>
 				</div>
 			</div>
 		</footer>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
 	</body>
 </html>

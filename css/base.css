@@ -6,6 +6,7 @@
   width: 100%;
   position: relative;
   padding: 0 80px;
+  overflow: hidden;
 }
 
 .container--header {
