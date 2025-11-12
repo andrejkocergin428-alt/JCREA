@@ -96,41 +96,52 @@
 						<label class="ui-burger__svg" for="dropdown-1" role="button" type="button"
 							><span class="ui-line"></span> <span class="ui-line"></span><span class="ui-line"></span>
 						</label>
-						<input type="checkbox" id="dropdown-1" name="dropdown-1" aria-label="menu button" />
+						<input
+							type="checkbox"
+							id="dropdown-1"
+							name="dropdown-1"
+							aria-label="menu button"
+							aria-describedby="header menu" />
 						<div class="ui-burger__box">
 							<label class="header-checked"
 								><input type="radio" name="navigation" value="" checked aria-label="home" /><span
 									class="header-checked__button i3-r-l"
+									id="header menu"
 									>Home</span
 								></label
 							>
 							<label class="header-checked"
 								><input type="radio" name="navigation" aria-label="about" /><span
 									class="header-checked__button i3-r-l"
+									id="header menu"
 									>About</span
 								></label
 							>
 							<label class="header-checked"
 								><input type="radio" name="navigation" aria-label="service" /><span
 									class="header-checked__button i3-r-l"
+									id="header menu"
 									>Service</span
 								></label
 							>
 							<label class="header-checked"
 								><input type="radio" name="navigation" aria-label="resume" /><span
 									class="header-checked__button i3-r-l"
+									id="header menu"
 									>Resume</span
 								></label
 							>
 							<label class="header-checked"
 								><input type="radio" name="navigation" aria-label="project" /><span
 									class="header-checked__button i3-r-l"
+									id="header menu"
 									>Project</span
 								></label
 							>
 							<label class="header-checked"
 								><input type="radio" name="navigation" aria-label="contact" /><span
 									class="header-checked__button i3-r-l"
+									id="header menu"
 									>Contact</span
 								></label
 							>
@@ -928,9 +939,13 @@
 							<input
 								class="discuss-registration__email i3-m-u"
 								placeholder="Enter Email Address"
-								type="text" />
+								type="text"
+								required
+								aria-required="true"
+								inputmode="email"
+								autocomplete="on" />
 
-							<button class="ui-button i3-m-u" type="button" aria-label="send">Send</button>
+							<button class="ui-button i3-m-u" type="submit" aria-label="send">Send</button>
 						</label>
 					</form>
 
@@ -1486,9 +1501,16 @@
 
 						<form class="footer-content__bar">
 							<label>
-								<input class="i3-m-u footer-content__email" placeholder="Email Address" type="text" />
+								<input
+									class="i3-m-u footer-content__email"
+									placeholder="Email Address"
+									type="text"
+									required
+									aria-required="true"
+									inputmode="email"
+									autocomplete="on" />
 
-								<button class="footer-content__button" type="button" aria-label="arrow">
+								<button class="footer-content__button" type="submit" aria-label="arrow">
 									<svg
 										class="footer-content__svg"
 										width="24"
