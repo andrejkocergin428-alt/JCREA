@@ -188,19 +188,21 @@
 					</div>
 				</div>
 
-				<div class="section-main__button">
-					<button class="i1-l-l section-main__button--switch" type="button" aria-label="portfolio">
-						Portfolio
+				<form class="section-main__button">
+					<label>
+						<input type="radio" name="main-button" checked aria-label="portfolio" /><span
+							class="i1-l-l section-main__button--switch"
+							>Portfolio <img src="/images/icons/45-arrow-white.svg" alt="arrow"
+						/></span>
+					</label>
 
-						<img src="/images/icons/45-arrow-white.svg" alt="arrow" />
-					</button>
-
-					<button class="i1-l-l section-main__button--switch" type="button" aria-label="hire me">
-						Hire me
-
-						<img src="/images/icons/45-arrow-white.svg" alt="arrow" />
-					</button>
-				</div>
+					<label>
+						<input type="radio" name="main-button" aria-label="hire me" /><span
+							class="i1-l-l section-main__button--switch"
+							>Hire me <img src="/images/icons/45-arrow-white.svg" alt="arrow"
+						/></span>
+					</label>
+				</form>
 			</section>
 
 			<section class="section-services container">
@@ -491,10 +493,9 @@
 						<p class="portfolio-title h3-s-l" data-aos="fade-right">
 							Lets have a look at my <span class="ui-color">Portfolio</span>
 						</p>
-
-						<button class="ui-button i3-b-l" type="button" aria-label="see all" data-aos="fade-left">
-							See All
-						</button>
+						<div data-aos="fade-left">
+							<button class="ui-button i3-b-l" type="button" aria-label="see all">See All</button>
+						</div>
 					</div>
 
 					<div class="portfolio-main__container">
@@ -1063,7 +1064,9 @@
 				<div class="post-header">
 					<p class="post-header__title s1-b-l" data-aos="fade-right">From my blog post</p>
 
-					<button class="ui-button i3-b-l" aria-label="see all" data-aos="fade-left">See All</button>
+					<div data-aos="fade-left">
+						<button class="ui-button i3-b-l" aria-label="see all">See All</button>
+					</div>
 				</div>
 
 				<div class="post-container" data-aos="fade-up">
@@ -1254,29 +1257,31 @@
 				<div class="footer-apex">
 					<p class="footer-apex__title h3-s-l" data-aos="fade-right">Lets Connect there</p>
 
-					<button class="ui-button i1-m-l" type="button" aria-label="hire me" data-aos="fade-left">
-						Hire me
-						<svg
-							class="ui-button__svg"
-							width="42"
-							height="42"
-							viewBox="0 0 42 42"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M12.25 29.75L29.75 12.25"
-								stroke="white"
-								stroke-width="2"
-								stroke-linecap="round"
-								stroke-linejoin="round" />
-							<path
-								d="M12.25 12.25H29.75V29.75"
-								stroke="white"
-								stroke-width="2"
-								stroke-linecap="round"
-								stroke-linejoin="round" />
-						</svg>
-					</button>
+					<div data-aos="fade-left">
+						<button class="ui-button i1-m-l" type="button" aria-label="hire me">
+							Hire me
+							<svg
+								class="ui-button__svg"
+								width="42"
+								height="42"
+								viewBox="0 0 42 42"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M12.25 29.75L29.75 12.25"
+									stroke="white"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									d="M12.25 12.25H29.75V29.75"
+									stroke="white"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+							</svg>
+						</button>
+					</div>
 				</div>
 
 				<div class="footer-line" data-aos="zoom-out"></div>

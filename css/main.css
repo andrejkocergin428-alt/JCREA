@@ -92,6 +92,7 @@
   color: var(--color-white);
   transition: 0.5s all;
   border-radius: 50px;
+  cursor: pointer;
 }
 
 .section-main__button img {
@@ -101,14 +102,19 @@
   transition: 0.3s all;
 }
 
-.section-main__button--switch:hover {
+.section-main__button input {
+  display: none;
+
+}
+
+.section-main__button input:checked+.section-main__button--switch {
   cursor: pointer;
   border: 1px solid var(--color-main);
   background-color: var(--color-main);
 
 }
 
-.section-main__button--switch:hover img {
+.section-main__button input:checked+.section-main__button--switch img {
   width: 40px;
   height: 40px;
   transform: scale(1);
