@@ -27,6 +27,7 @@
   position: relative;
   width: 100%;
   min-height: 390px;
+  cursor: pointer;
 }
 
 .portfolio-card__container {
@@ -117,6 +118,16 @@
   transform: scale(1.1);
 }
 
+.portfolio-footer__button:active {
+  background-color: var(--color-main);
+  color: var(--color-white);
+}
+
+
+.portfolio-footer__button:hover {
+  transform: scale(1.1);
+}
+
 .portfolio-footer__description {
   display: flex;
   flex-direction: row;
@@ -136,6 +147,10 @@
 
 .portfolio-footer__svg--arrow:hover {
   transform: scale(1.1);
+}
+
+.portfolio-footer__svg--arrow:active {
+  transform: rotate(45deg);
 }
 
 .portfolio-footer__subtitle {

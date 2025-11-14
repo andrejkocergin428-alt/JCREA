@@ -46,6 +46,15 @@
   width: max-content;
 }
 
+.post-content__button:hover {
+  transform: scale(1.1);
+}
+
+.post-content__button:active {
+  background-color: var(--color-main);
+  color: var(--color-white);
+}
+
 .post-content__info {
   display: flex;
   flex-direction: row;

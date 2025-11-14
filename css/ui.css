@@ -68,6 +68,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
+
 }
 
 .ui-button__svg {
@@ -80,6 +81,10 @@
 
 .ui-button:hover {
   transform: scale(1.1);
+}
+
+.ui-button:active {
+  background: linear-gradient(90deg, rgba(252, 139, 139, 1) 0%, rgba(225, 97, 232, 1) 50%, rgba(199, 237, 240, 1) 100%);
 }
 
 .ui-pagination {
@@ -119,7 +124,6 @@
 .ui-card__container {
   cursor: pointer;
   position: relative;
-  overflow: hidden;
   border-radius: 50px;
 }
 
