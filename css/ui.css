@@ -119,7 +119,8 @@
 .ui-card__container {
   cursor: pointer;
   position: relative;
-
+  overflow: hidden;
+  border-radius: 50px;
 }
 
 .ui-card__container:hover .ui-card__arrow {
@@ -131,6 +132,10 @@
 }
 
 .ui-card__container:hover .card__images {
+  transform: scale(1.1);
+}
+
+.ui-card__container:hover .post-card__img {
   transform: scale(1.1);
 }
 

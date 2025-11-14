@@ -29,6 +29,7 @@
 
 .post-card__img {
   width: 100%;
+  transition: 0.3s all;
 }
 
 .post-container__card {
