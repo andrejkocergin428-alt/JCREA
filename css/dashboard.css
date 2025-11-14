@@ -12,14 +12,112 @@
 
 .dashboard-box {
   display: flex;
-  flex-direction: row;
   align-items: center;
   border: 1px solid transparent;
   gap: 12px;
-  min-width: 104%;
   background-color: var(--color-white);
   padding: 2px 0;
-  transform: rotate(-2deg);
+  transform: translateX(-52vw) rotate(-2deg) translateY(35px);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.dashboard-animation--first {
+  animation: dashboard--first 12s linear infinite;
+}
+
+.dashboard-animation--second {
+  animation: dashboard--second 12s linear infinite;
+}
+
+.dashboard-animation--third {
+  animation: dashboard--third 12s linear infinite;
+}
+
+.dashboard-animation--fourth {
+  animation: dashboard--fourth 12s linear infinite;
+}
+
+.dashboard-animation--fifth {
+  animation: dashboard--fifth 12s linear infinite;
+}
+
+.dashboard-animation--sixth {
+  animation: dashboard--sixth 12s linear infinite;
+}
+
+.dashboard-animation--seventh {
+  animation: dashboard--seventh 12s linear infinite;
+}
+
+.dashboard-animation--eighth {
+  animation: dashboard--eighth 12s linear infinite;
+}
+
+.dashboard-animation--nineth {
+  animation: dashboard--nineth 12s linear infinite;
+}
+
+
+@keyframes dashboard--first {
+  100% {
+    transform: translateX(1580px);
+  }
+}
+
+@keyframes dashboard--second {
+  100% {
+    transform: translateX(1580px);
+  }
+
+}
+
+@keyframes dashboard--third {
+  100% {
+    transform: translateX(1580px);
+  }
+
+}
+
+@keyframes dashboard--fourth {
+  100% {
+    transform: translateX(1580px);
+  }
+
+}
+
+@keyframes dashboard--fifth {
+  100% {
+    transform: translateX(1580px);
+  }
+
+}
+
+@keyframes dashboard--sixth {
+  100% {
+    transform: translateX(1580px);
+  }
+
+}
+
+@keyframes dashboard--seventh {
+  100% {
+    transform: translateX(1580px);
+  }
+
+}
+
+@keyframes dashboard--eighth {
+  100% {
+    transform: translateX(1580px);
+  }
+
+}
+
+@keyframes dashboard--nineth {
+  100% {
+    transform: translateX(1580px);
+  }
 }
 
 @media (max-width:768px) {
