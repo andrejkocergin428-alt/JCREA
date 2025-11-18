@@ -36,6 +36,7 @@
 		<link rel="stylesheet" href="./css/dashboard.css" />
 		<link rel="stylesheet" href="./css/post.css" />
 		<link rel="stylesheet" href="./css/footer.css" />
+		<link rel="stylesheet" href="./css/popup.css" />
 		<link rel="manifest" href="/manifest.json" />
 		<link rel="manifest" href="/site.webmanifest" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -500,13 +501,13 @@
 
 			<section class="hire-container">
 				<div class="container section-hire">
-					<div class="hire-image__container" data-aos="fade-right">
+					<div class="hire-image__container">
 						<img class="hire-woman" src="./images/hire/woman-hire.png" alt="woman" />
 
 						<img class="hire-ellipse" src="./images/hire/ellipse.png" alt="ellipse" />
 					</div>
 
-					<div class="hire-description" data-aos="fade-left">
+					<div class="hire-description">
 						<p class="description__title h3-s-l">Why <span class="ui-color">Hire Me</span>?</p>
 
 						<p class="i3-r-l lorem description__subtitle">
@@ -527,9 +528,50 @@
 							</div>
 						</div>
 
-						<button class="hire-description__button s4-s-l" type="button" aria-label="hire me">
-							Hire me
-						</button>
+						<form class="hire-description__button--checked">
+							<label for="popup-hire">
+								<span class="hire-description__button s4-s-l">Hire me</span>
+							</label>
+
+							<input
+								class="hire-description__button--input"
+								id="popup-hire"
+								type="radio"
+								name="hire"
+								aria-label="hire me" />
+
+							<div class="popup-hire popup-container__submit">
+								<svg class="popup-svg__cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+									<path
+										d="M183.1 137.4C170.6 124.9 150.3 124.9 137.8 137.4C125.3 149.9 125.3 170.2 137.8 182.7L275.2 320L137.9 457.4C125.4 469.9 125.4 490.2 137.9 502.7C150.4 515.2 170.7 515.2 183.2 502.7L320.5 365.3L457.9 502.6C470.4 515.1 490.7 515.1 503.2 502.6C515.7 490.1 515.7 469.8 503.2 457.3L365.8 320L503.1 182.6C515.6 170.1 515.6 149.8 503.1 137.3C490.6 124.8 470.3 124.8 457.8 137.3L320.5 274.7L183.1 137.4z" />
+								</svg>
+								<div class="popup-container">
+									<p class="s1-b-l popup-container__title">Hire me</p>
+									<p class="i3-r-i popup-container__subtitle">
+										Leave your contact information and I will get back to you
+									</p>
+
+									<label class="popup-container__data i3-r-i">
+										<input
+											class="popup-container__input"
+											placeholder="Your name"
+											type="name"
+											required
+											autocomplete="on"
+											aria-required="true" />
+										<input
+											class="popup-container__input"
+											placeholder="Email "
+											type="email"
+											required
+											inputmode="email"
+											autocomplete="on"
+											aria-required="true"
+									/></label>
+									<button class="ui-button ui-button--popup i1-m-l" type="submit">Send</button>
+								</div>
+							</div>
+						</form>
 					</div>
 				</div>
 			</section>

@@ -70,8 +70,6 @@ header {
 .header-checked input:checked+.header-checked__button {
   border: 1px solid var(--color-main);
   background-color: var(--color-main);
-
-
 }
 
 .header-checked:hover {
