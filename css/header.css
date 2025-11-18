@@ -64,8 +64,7 @@ header {
   border-radius: 50px;
   padding: 20px 40px;
   transition: 0.5s all;
-  text-align: center;
-  min-width: 100%;
+
 }
 
 .header-checked input:checked+.header-checked__button {
@@ -124,6 +123,11 @@ header {
 @media (max-width: 500px) {
   .header-form {
     padding: 5px 16px 5px 5px;
+  }
+
+  .header-checked__button {
+    text-align: center;
+    min-width: 100%;
   }
 
   .header-form__buttons {
