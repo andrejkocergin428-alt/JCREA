@@ -12,6 +12,7 @@
 .container--header {
   position: fixed;
   top: 20px;
+  overflow: visible;
 }
 
 .lorem {
