@@ -536,15 +536,17 @@
 							<input
 								class="hire-description__button--input"
 								id="popup-hire"
-								type="radio"
+								type="checkbox"
 								name="hire"
 								aria-label="hire me" />
 
 							<div class="popup-hire popup-container__submit">
-								<svg class="popup-svg__cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-									<path
-										d="M183.1 137.4C170.6 124.9 150.3 124.9 137.8 137.4C125.3 149.9 125.3 170.2 137.8 182.7L275.2 320L137.9 457.4C125.4 469.9 125.4 490.2 137.9 502.7C150.4 515.2 170.7 515.2 183.2 502.7L320.5 365.3L457.9 502.6C470.4 515.1 490.7 515.1 503.2 502.6C515.7 490.1 515.7 469.8 503.2 457.3L365.8 320L503.1 182.6C515.6 170.1 515.6 149.8 503.1 137.3C490.6 124.8 470.3 124.8 457.8 137.3L320.5 274.7L183.1 137.4z" />
-								</svg>
+								<label for="popup-hire">
+									<svg class="popup-svg__cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+										<path
+											d="M183.1 137.4C170.6 124.9 150.3 124.9 137.8 137.4C125.3 149.9 125.3 170.2 137.8 182.7L275.2 320L137.9 457.4C125.4 469.9 125.4 490.2 137.9 502.7C150.4 515.2 170.7 515.2 183.2 502.7L320.5 365.3L457.9 502.6C470.4 515.1 490.7 515.1 503.2 502.6C515.7 490.1 515.7 469.8 503.2 457.3L365.8 320L503.1 182.6C515.6 170.1 515.6 149.8 503.1 137.3C490.6 124.8 470.3 124.8 457.8 137.3L320.5 274.7L183.1 137.4z" />
+									</svg>
+								</label>
 								<div class="popup-container">
 									<p class="s1-b-l popup-container__title">Hire me</p>
 									<p class="i3-r-i popup-container__subtitle">
@@ -689,36 +691,60 @@
 					<div class="portfolio-footer" data-aos="zoom-out">
 						<div class="portfolio-footer__box">
 							<div class="portfolio-footer__gradient"></div>
-
-							<div class="portfolio-footer__scroll">
-								<div class="portfolio-footer__buttons">
-									<button class="portfolio-footer__button i3-r-i" type="button" aria-label="landing page">
-										Landing Page
-									</button>
-
-									<button class="portfolio-footer__button i3-r-i" type="button" aria-label="product design">
-										Product Design
-									</button>
-
-									<button class="portfolio-footer__button i3-r-i" type="button" aria-label="animation">
-										Animation
-									</button>
-
-									<button class="portfolio-footer__button i3-r-i" type="button" aria-label="glassmorphism">
-										Glassmorphism
-									</button>
-
-									<button class="portfolio-footer__button i3-r-i" type="button" aria-label="cards">
-										Cards
-									</button>
+							
+							<form>
+								<div class="portfolio-footer__scroll">
+									<div class="portfolio-footer__buttons">
+										<label class="portfolio-footer__buttons" for="food">
+											<input type="radio" name="portfolio-radio" aria-label="landing page" id="food"checked/><span
+												class="portfolio-footer__button i3-r-i"
+												>Landing Page</span
+											>
+											<p class="portfolio-footer__title s1-b-l" id="food">Lirante - Food Dilvery Solution</p>
+											<p class="portfolio-footer__subtitle i3-s-l" id="food">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue interdum ligula a dignissim.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas
+							lobortis.</p>
+										</label>
+										
+										<label class="portfolio-footer__buttons" for="product">
+											<input type="radio" name="portfolio-radio" aria-label="product design" id="product"/><span
+												class="portfolio-footer__button i3-r-i"
+												>Product Design</span
+											><p class="portfolio-footer__title s1-b-l" id="product">Lirante - Product Design</p>
+											<p class="portfolio-footer__subtitle i3-s-l" id="product">Clean and intuitive product layouts focused on clarity, usability, and creating a smooth user experience.Clean and intuitive product layouts focused on clarity, usability, and creating a smooth user experience.</p>
+										</label>
+										
+										<label class="portfolio-footer__buttons" for="animation">
+											<input type="radio" name="portfolio-radio" aria-label="animation" id="animation"/><span
+												class="portfolio-footer__button i3-r-i"
+												>Animation</span
+											><p class="portfolio-footer__title s1-b-l" id="animation">Lirante - Animation</p>
+											<p class="portfolio-footer__subtitle i3-s-l" id="animation">Engaging motion effects that bring interfaces to life with subtle transitions and dynamic visual movement.Engaging motion effects that bring interfaces to life with subtle transitions and dynamic visual movement.</p>
+										</label>
+										
+										<label class="portfolio-footer__buttons" for="glassmorphism">
+											<input type="radio" name="portfolio-radio" aria-label="glassmorphism" id="glassmorphism" /><span
+												class="portfolio-footer__button i3-r-i"
+												>Glassmorphism</span
+											><p class="portfolio-footer__title s1-b-l" id="glassmorphism">Lirante - Glassmorphism</p>
+											<p class="portfolio-footer__subtitle i3-s-l" id="glassmorphism">Modern frosted-glass visuals combining soft blur, depth, and transparency for a refined layered look.Modern frosted-glass visuals combining soft blur, depth, and transparency for a refined layered look.</p>
+										</label>
+										
+										<label class="portfolio-footer__buttons" for="cards">
+											<input type="radio" name="portfolio-radio" aria-label="cards" id="cards"/><span
+												class="portfolio-footer__button i3-r-i"
+												>Cards</span
+											><p class="portfolio-footer__title s1-b-l" id="cards">Lirante - Cards</p>
+											<p class="portfolio-footer__subtitle i3-s-l" id="cards">Compact card elements designed to highlight key content with clean spacing, balance, and visual hierarchy.Compact card elements designed to highlight key content with clean spacing, balance, and visual hierarchy.</p>		
+										</label>
+									</div>
 								</div>
-							</div>
+							
 						</div>
 
 						<div class="portfolio-footer__description">
-							<p class="portfolio-footer__title s1-b-l">Lirante - Food Dilvery Solution</p>
-
-							<svg
+							
+							<svg for=""
 								class="portfolio-footer__svg--arrow"
 								width="58"
 								height="58"
@@ -756,15 +782,13 @@
 									stroke-linejoin="round" />
 							</svg>
 						</div>
-
-						<p class="portfolio-footer__subtitle i3-r-l">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue interdum ligula a dignissim.
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis orci elementum egestas
-							lobortis.
-						</p>
 					</div>
-				</div>
-			</section>
+					
+				</form>
+				
+			</div>
+			
+		</section>
 
 			<section class="container section-results">
 				<img

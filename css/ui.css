@@ -28,6 +28,7 @@
   opacity: 0;
   padding: 40px;
   z-index: 1;
+  pointer-events: none;
 }
 
 .ui-line {
@@ -38,6 +39,7 @@
 
 .ui-burger input:checked~.ui-burger__box {
   opacity: 1;
+  pointer-events: all;
 }
 
 .ui-color {
