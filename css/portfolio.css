@@ -125,7 +125,7 @@
   transform: scale(1.1);
 }
 
-.portfolio-footer__buttons input:checked~.portfolio-footer__title {
+.portfolio-footer__buttons input:checked~.portfolio-footer__container {
   opacity: 1;
 }
 
@@ -133,8 +133,21 @@
   opacity: 1;
 }
 
+
+
 .portfolio-footer__button:hover {
   transform: scale(1.1);
+}
+
+.portfolio-footer__container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  bottom: -60px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
 
 .portfolio-footer__description {
@@ -147,12 +160,8 @@
 
 .portfolio-footer__title {
   width: max-content;
-  position: absolute;
   left: 50%;
-  transform: translateX(-50%);
-  bottom: -60px;
   color: var(--color-title);
-  opacity: 0;
   transition: 0.3s all;
 }
 
@@ -168,9 +177,6 @@
 }
 
 .portfolio-footer__svg--arrow {
-  top: 75px;
-  position: absolute;
-  right: 20%;
   transition: 0.3s all;
   cursor: pointer;
 }
