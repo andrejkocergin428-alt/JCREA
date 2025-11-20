@@ -37,19 +37,9 @@
 		<link rel="stylesheet" href="./css/post.css" />
 		<link rel="stylesheet" href="./css/footer.css" />
 		<link rel="stylesheet" href="./css/popup.css" />
+		<link rel="stylesheet" href="./css/fonts.css" />
 		<link rel="manifest" href="/manifest.json" />
 		<link rel="manifest" href="/site.webmanifest" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
-			rel="stylesheet" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
-			rel="stylesheet" />
-		<link href="https://fonts.cdnfonts.com/css/lufga" rel="stylesheet" />
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 		<link rel="icon" type="image/png" sizes="36x36" href="./images/favicon/android-icon-36x36.png" />
 		<link rel="icon" type="image/png" sizes="48x48" href="./images/favicon/android-icon-48x48.png" />
@@ -85,26 +75,21 @@
 			<div class="header">
 				<form class="header-form">
 					<div class="header-form__buttons">
-						<label class="header-checked"
-							><input type="radio" name="navigation-header" value="" checked aria-label="home" /><span
-								class="header-checked__button i3-r-l"
-								>Home</span
-							></label
-						>
+						<label class="header-checked">
+							<input type="radio" name="navigation-header" value="" checked aria-label="home" />
 
-						<label class="header-checked"
-							><input type="radio" name="navigation-header" aria-label="about" /><span
-								class="header-checked__button i3-r-l"
-								>About</span
-							></label
-						>
+							<span class="header-checked__button i3-r-l">Home</span>
+						</label>
 
-						<label class="header-checked"
-							><input type="radio" name="navigation-header" aria-label="service" /><span
-								class="header-checked__button i3-r-l"
-								>Service</span
-							></label
-						>
+						<label class="header-checked">
+							<input type="radio" name="navigation-header" aria-label="about" />
+							<span class="header-checked__button i3-r-l">About</span>
+						</label>
+
+						<label class="header-checked">
+							<input type="radio" name="navigation-header" aria-label="service" />
+							<span class="header-checked__button i3-r-l">Service</span>
+						</label>
 					</div>
 
 					<div class="header-logo">
@@ -244,6 +229,7 @@
 							class="section-main__img"
 							src="./images/main/woman-title.png"
 							alt="woman"
+							fetchpriority="high"
 							draggable="false" />
 					</picture>
 				</div>

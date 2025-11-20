@@ -40,15 +40,20 @@
 
   /* font-weight; */
   --font-weight-l: 300;
+  /* light  */
   --font-weight-r: 400;
+  /* regular */
   --font-weight-m: 500;
+  /* medium */
   --font-weight-s: 600;
+  /* semi-bold */
   --font-weight-b: 700;
+  /* black */
 
   /* font-family */
-  --font-family-lufga: 'Lufga', sans-serif;
-  --font-family-inter: 'Inter', sans-serif;
-  --font-family-urbanist: 'Urbanist', sans-serif;
+  --font-family-lufga: 'Lufga';
+  --font-family-inter: 'Inter';
+  --font-family-urbanist: 'Urbanist';
 }
 
 /* typography styles */
