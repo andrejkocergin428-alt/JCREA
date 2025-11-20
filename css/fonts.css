@@ -1,104 +1,104 @@
 @font-face {
   font-family: 'Lufga';
-  src: url(/fonts/lufga/LufgaBlack.ttf);
+  src: url("./fonts/lufga/LufgaBlack.ttf");
   font-weight: 700;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Lufga';
-  src: url(/fonts/lufga/LufgaLight.ttf);
+  src: url("./fonts/lufga/LufgaLight.ttf");
   font-weight: 300;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Lufga';
-  src: url(/fonts/lufga/LufgaMedium.ttf);
+  src: url("./fonts/lufga/LufgaMedium.ttf");
   font-weight: 500;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Lufga';
-  src: url(/fonts/lufga/LufgaRegular.ttf);
+  src: url("./fonts/lufga/LufgaRegular.ttf");
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Lufga';
-  src: url(/fonts/lufga/LufgaSemiBold.ttf);
+  src: url("./fonts/lufga/LufgaSemiBold.ttf");
   font-weight: 600;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Inter';
-  src: url(/fonts/inter/Inter_18pt-Black.ttf);
+  src: url("./fonts/inter/Inter_18pt-Black.ttf");
   font-weight: 700;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Inter';
-  src: url(/fonts/inter/Inter_18pt-Bold.ttf);
+  src: url("./fonts/inter/Inter_18pt-Bold.ttf");
   font-weight: 600;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Inter';
-  src: url(/fonts/inter/Inter_18pt-Light.ttf);
+  src: url("./fonts/inter/Inter_18pt-Light.ttf");
   font-weight: 300;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Inter';
-  src: url(/fonts/inter/Inter_18pt-Regular.ttf);
+  src: url("./fonts/inter/Inter_18pt-Regular.ttf");
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Inter';
-  src: url(/fonts/inter/Inter_18pt-Medium.ttf);
+  src: url("./fonts/inter/Inter_18pt-Medium.ttf");
   font-weight: 500;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Urbanist';
-  src: url(/fonts/urb/Urbanist-Black.ttf);
+  src: url("./fonts/urb/Urbanist-Black.ttf");
   font-weight: 700;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Urbanist';
-  src: url(/fonts/urb/Urbanist-Bold.ttf);
+  src: url("./fonts/urb/Urbanist-Bold.ttf");
   font-weight: 600;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Urbanist';
-  src: url(/fonts/urb/Urbanist-Light.ttf);
+  src: url("./fonts/urb/Urbanist-Light.ttf");
   font-weight: 300;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Urbanist';
-  src: url(/fonts/urb/Urbanist-Medium.ttf);
+  src: url("./fonts/urb/Urbanist-Medium.ttf");
   font-weight: 500;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Urbanist';
-  src: url(/fonts/urb/Urbanist-Regular.ttf);
+  src: url("./fonts/urb/Urbanist-Regular.ttf");
   font-weight: 400;
   font-display: swap;
 }
