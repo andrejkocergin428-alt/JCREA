@@ -2063,13 +2063,20 @@
 				<div class="footer-copyright">
 					<p class="i3-r-l" data-aos="fade-right">Copyright© 2023 Jayesh. All Rights Reserved.</p>
 
-					<p class="i3-r-l" data-aos="fade-left">User Terms & Conditions | Privacy Policy</p>
+					<p class="i3-r-l" data-aos="fade-left">User Terms & Conditions | Privaasync="false"cy Policy</p>
 				</div>
 			</div>
 		</footer>
-		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script>
-			AOS.init();
+			(function () {
+				const script = document.createElement('script');
+				script.src = 'https://unpkg.com/aos@2.3.1/dist/aos.js';
+				script.async = true;
+				script.onload = () => {
+					AOS.init({});
+				};
+				document.body.appendChild(script);
+			})();
 		</script>
 	</body>
 </html>
