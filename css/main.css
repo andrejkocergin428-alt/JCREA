@@ -13,13 +13,13 @@
 .section-main__eyelashes--first {
   position: absolute;
   right: 45%;
-  top: 208px;
+  top: 18%;
 }
 
 .section-main__eyelashes--second {
   position: absolute;
   left: 22%;
-  top: 470px;
+  top: 44%;
 }
 
 .section-main__img {
@@ -141,6 +141,7 @@
 
   .section-main__button {
     bottom: -380px;
+    width: 278px;
   }
 }
 
@@ -163,11 +164,7 @@
   }
 
   .section-main__button {
-    bottom: 0;
-  }
-
-  .section-main__button {
-    width: 200px;
+    width: 268px;
     height: 70px;
     bottom: -140px;
   }
