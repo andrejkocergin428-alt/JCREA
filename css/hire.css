@@ -77,7 +77,7 @@
   transition: 0.3s all;
 }
 
-.hire-description__button--checked input:checked~.popup-hire {
+.hire-description__button--checked input:checked~.popup {
   opacity: 1;
   pointer-events: all;
 }
