@@ -135,9 +135,16 @@
 }
 
 .portfolio-footer__buttons input:checked~.portfolio-footer__button {
-  transform: rotate(3deg);
   background-color: var(--color-main);
   color: var(--color-white);
+}
+
+.portfolio-footer__buttons input:checked~.portfolio-footer__button--first {
+  transform: rotate(-3deg);
+}
+
+.portfolio-footer__buttons input:checked~.portfolio-footer__button--second {
+  transform: rotate(3deg);
 }
 
 
