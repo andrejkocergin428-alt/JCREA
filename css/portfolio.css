@@ -106,6 +106,7 @@
   justify-content: center;
   align-items: center;
   height: 70px;
+  margin-bottom: 50px;
 }
 
 .portfolio-footer__button {
@@ -132,6 +133,13 @@
 .portfolio-footer__buttons input:checked~.portfolio-footer__subtitle {
   opacity: 1;
 }
+
+.portfolio-footer__buttons input:checked~.portfolio-footer__button {
+  transform: rotate(3deg);
+  background-color: var(--color-main);
+  color: var(--color-white);
+}
+
 
 
 
