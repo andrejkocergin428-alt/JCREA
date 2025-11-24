@@ -1,104 +1,134 @@
 @font-face {
   font-family: 'Lufga';
-  src: url("./../fonts/lufga/LufgaBlack.ttf");
+  src: url("./../fonts/lufga/LufgaBlack.ttf") format("truetype");
+  src: url("./../fonts/lufga/LufgaBlack.woff") format("woff");
+  src: url("./../fonts/lufga/LufgaBlack.woff2") format("woff2");
   font-weight: 700;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Lufga';
-  src: url("./../fonts/lufga/LufgaLight.ttf");
+  src: url("./../fonts/lufga/LufgaLight.ttf") format("truetype");
+  src: url("./../fonts/lufga/LufgaLight.woff") format("woff");
+  src: url("./../fonts/lufga/LufgaLight.woff2") format("woff2");
   font-weight: 300;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Lufga';
-  src: url("./../fonts/lufga/LufgaMedium.ttf");
+  src: url("./../fonts/lufga/LufgaMedium.ttf") format("truetype");
+  src: url("./../fonts/lufga/LufgaMedium.woff") format("woff");
+  src: url("./../fonts/lufga/LufgaMedium.woff2") format("woff2");
   font-weight: 500;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Lufga';
-  src: url("./../fonts/lufga/LufgaRegular.ttf");
+  src: url("./../fonts/lufga/LufgaRegular.ttf") format("truetype");
+  src: url("./../fonts/lufga/LufgaRegular.woff") format("woff");
+  src: url("./../fonts/lufga/LufgaRegular.woff2") format("woff2");
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Lufga';
-  src: url("./../fonts/lufga/LufgaSemiBold.ttf");
+  src: url("./../fonts/lufga/LufgaSemiBold.ttf") format("truetype");
+  src: url("./../fonts/lufga/LufgaSemiBold.woff") format("woff");
+  src: url("./../fonts/lufga/LufgaSemiBold.woff2") format("woff2");
   font-weight: 600;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Inter';
-  src: url("./../fonts/inter/Inter_18pt-Black.ttf");
+  src: url("./../fonts/inter/Inter_18pt-Black.ttf") format("truetype");
+  src: url("./../fonts/inter/Inter_18pt-Black.woff") format("woff");
+  src: url("./../fonts/inter/Inter_18pt-Black.woff2") format("woff2");
   font-weight: 700;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Inter';
-  src: url("./../fonts/inter/Inter_18pt-Bold.ttf");
+  src: url("./../fonts/inter/Inter_18pt-Bold.ttf") format("truetype");
+  src: url("./../fonts/inter/Inter_18pt-Bold.woff") format("woff");
+  src: url("./../fonts/inter/Inter_18pt-Bold.woff2") format("woff2");
   font-weight: 600;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Inter';
-  src: url("./../fonts/inter/Inter_18pt-Light.ttf");
+  src: url("./../fonts/inter/Inter_18pt-Light.ttf") format("truetype");
+  src: url("./../fonts/inter/Inter_18pt-Light.woff") format("woff");
+  src: url("./../fonts/inter/Inter_18pt-Light.woff2") format("woff2");
   font-weight: 300;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Inter';
-  src: url("./../fonts/inter/Inter_18pt-Regular.ttf");
+  src: url("./../fonts/inter/Inter_18pt-Regular.woff2") format("woff2");
+  src: url("./../fonts/inter/Inter_18pt-Regular.ttf") format("truetype");
+  src: url("./../fonts/inter/Inter_18pt-Regular.woff") format("woff");
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Inter';
-  src: url("./../fonts/inter/Inter_18pt-Medium.ttf");
+  src: url("./../fonts/inter/Inter_18pt-Medium.ttf") format("truetype");
+  src: url("./../fonts/inter/Inter_18pt-Medium.woff") format("woff");
+  src: url("./../fonts/inter/Inter_18pt-Medium.woff2") format("woff2");
   font-weight: 500;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Urbanist';
-  src: url("./../fonts/urb/Urbanist-Black.ttf");
+  src: url("./../fonts/urb/Urbanist-Black.ttf") format("trueype");
+  src: url("./../fonts/urb/Urbanist-Black.woff2") format("woff2");
+  src: url("./../fonts/urb/Urbanist-Black.woff") format("woff");
   font-weight: 700;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Urbanist';
-  src: url("./../fonts/urb/Urbanist-Bold.ttf");
+  src: url("./../fonts/urb/Urbanist-Bold.ttf") format("truetype");
+  src: url("./../fonts/urb/Urbanist-Bold.woff2") format("woff2");
+  src: url("./../fonts/urb/Urbanist-Bold.woff") format("woff");
   font-weight: 600;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Urbanist';
-  src: url("./../fonts/urb/Urbanist-Light.ttf");
+  src: url("./../fonts/urb/Urbanist-Light.ttf") format("truetype");
+  src: url("./../fonts/urb/Urbanist-Light.woff2") format("woff2");
+  src: url("./../fonts/urb/Urbanist-Light.woff") format("woff");
   font-weight: 300;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Urbanist';
-  src: url("./../fonts/urb/Urbanist-Medium.ttf");
+  src: url("./../fonts/urb/Urbanist-Medium.ttf") format("truetype");
+  src: url("./../fonts/urb/Urbanist-Medium.woff2") format("woff2");
+  src: url("./../fonts/urb/Urbanist-Medium.woff") format("woff");
   font-weight: 500;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Urbanist';
-  src: url("./../fonts/urb/Urbanist-Regular.ttf");
+  src: url("./../fonts/urb/Urbanist-Regular.ttf") format("truetype");
+  src: url("./../fonts/urb/Urbanist-Regular.woff2") format("woff2");
+  src: url("./../fonts/urb/Urbanist-Regular.woff") format("woff");
   font-weight: 400;
   font-display: swap;
 }
