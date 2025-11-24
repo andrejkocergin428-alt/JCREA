@@ -2,23 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<link rel="canonical" href="index.html" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="Jayesh Patil, new web disagner, follow me to see my projects" />
-		<meta property="og:title" content="JCREA" />
-		<meta property="og:description" content="Jayesh Patil, new web disagner, follow me to see my projects" />
-		<meta property="og:url" content="index.html" />
-		<meta property="og:type" content="website" />
-		<meta property="og:site_name" content="JCREA" />
-		<meta property="og:image" content="./images/icons/woman-title.png" />
-		<meta property="og:image:alt" content="web-design" />
-		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:image" content="./images/icons/woman-title.png" />
-		<meta name="twitter:title" content="JCREA" />
-		<meta name="twitter:description" content="Jayesh Patil, new web disagner, follow me to see my projects" />
-		<meta name="format-detection" content="telephone=no" />
-		<meta name="robots" content="noindex, nofollow" />
-		<meta name="theme-color" content="#ffffff" />
+
 		<title>JCREA</title>
 		<link rel="stylesheet" href="./css/reset.css" />
 		<link rel="stylesheet" href="./css/ui.css" />
@@ -71,6 +55,7 @@
 		<meta name="msapplication-TileImage" sizes="310x310" content="./images/favicon/ms-icon-310x310.png" />
 		<meta name="msapplication-config" content="/favicon/browserconfig.xml" />
 	</head>
+
 	<body>
 		<header class="container container--header">
 			<div class="header">
@@ -137,42 +122,43 @@
 							id="dropdown-1"
 							name="dropdown-1"
 							aria-label="menu button"
-							aria-describedby="header menu" />
+							aria-describedby="headermenu" />
+
 						<div class="ui-burger__box">
 							<label class="header-checked">
 								<input type="radio" name="navigation" value="" checked aria-label="home" />
 
-								<span class="header-checked__button i3-r-l" id="header menu">Home</span>
+								<span class="header-checked__button i3-r-l" id="headermenu">Home</span>
 							</label>
 
 							<label class="header-checked">
 								<input type="radio" name="navigation" aria-label="about" />
 
-								<span class="header-checked__button i3-r-l" id="header menu">About</span>
+								<span class="header-checked__button i3-r-l" id="headermenu">About</span>
 							</label>
 
 							<label class="header-checked">
 								<input type="radio" name="navigation" aria-label="service" />
 
-								<span class="header-checked__button i3-r-l" id="header menu">Service</span>
+								<span class="header-checked__button i3-r-l" id="headermenu">Service</span>
 							</label>
 
 							<label class="header-checked">
 								<input type="radio" name="navigation" aria-label="resume" />
 
-								<span class="header-checked__button i3-r-l" id="header menu">Resume</span>
+								<span class="header-checked__button i3-r-l" id="headermenu">Resume</span>
 							</label>
 
 							<label class="header-checked">
 								<input type="radio" name="navigation" aria-label="project" />
 
-								<span class="header-checked__button i3-r-l" id="header menu">Project</span>
+								<span class="header-checked__button i3-r-l" id="headermenu">Project</span>
 							</label>
 
 							<label class="header-checked">
 								<input type="radio" name="navigation" aria-label="contact" />
 
-								<span class="header-checked__button i3-r-l" id="header menu">Contact</span>
+								<span class="header-checked__button i3-r-l" id="headermenu">Contact</span>
 							</label>
 						</div>
 					</div>
@@ -357,8 +343,59 @@
 							vulputate, bibendum sodales
 						</p>
 					</div>
+					<div class="swiper-services"></div>
+					<div class="section-service__cards swiper-wrapper" data-aos="fade-up">
+						<div class="ui-card__container">
+							<div class="service-card">
+								<p class="service-card__title s4-m-l">UI/UX Design</p>
 
-					<div class="section-service__cards" data-aos="fade-up">
+								<div class="card__images">
+									<picture>
+										<source srcset="./images/services/cards/landing-page.webp" type="image/webp" />
+
+										<img
+											class="service-card__image"
+											src="./images/services/cards/landing-page.jpg"
+											alt="image-design"
+											loading="lazy" />
+									</picture>
+
+									<div class="service-card__light-gray"></div>
+
+									<div class="service-card__gray"></div>
+								</div>
+							</div>
+
+							<svg
+								class="ui-card__arrow"
+								xmlns="http://www.w3.org/2000/svg"
+								width="114"
+								height="114"
+								viewBox="0 0 114 114"
+								fill="none">
+								<rect
+									x="4.9831e-06"
+									y="114"
+									width="114"
+									height="114"
+									rx="57"
+									transform="rotate(-90 4.9831e-06 114)"
+									fill="currentColor" />
+								<path
+									d="M42 72L72 42"
+									stroke="white"
+									stroke-width="4"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									d="M42 42H72V72"
+									stroke="white"
+									stroke-width="4"
+									stroke-linecap="round"
+									stroke-linejoin="round" />
+							</svg>
+						</div>
+
 						<div class="ui-card__container">
 							<div class="service-card">
 								<p class="service-card__title s4-m-l">UI/UX Design</p>
@@ -584,7 +621,9 @@
 							<p class="i2-r-l experince-primary__information--color">Sep 2023</p>
 						</div>
 
-						<div class="experince-card" data-aos="fade-left"><p class="s2-s-l">Lead UX Designer</p></div>
+						<div class="experince-card" data-aos="fade-left">
+							<p class="s2-s-l">Lead UX Designer</p>
+						</div>
 
 						<div class="ui-chain">
 							<div class="ui-chain__circle"></div>
@@ -671,7 +710,7 @@
 											<input
 												class="popup-container__input"
 												placeholder="Your name"
-												type="name"
+												type="text"
 												required
 												autocomplete="on"
 												aria-required="true" />
@@ -836,7 +875,6 @@
 											<p class="portfolio-footer__title s1-b-l" id="food">Lirante - Food Dilvery Solution</p>
 
 											<svg
-												for=""
 												class="portfolio-footer__svg--arrow"
 												width="58"
 												height="58"
@@ -1378,7 +1416,8 @@
 
 			<section class="container section-discuss" data-aos="fade-up">
 				<p class="discuss__title h3-s-l">
-					Have an Awsome Project Idea? <span class="ui-color">Let’s Discuss</span>
+					Have an Awsome Project Idea?
+					<span class="ui-color">Let’s Discuss</span>
 				</p>
 
 				<div class="discuss-box">
@@ -1625,7 +1664,7 @@
 						</div>
 
 						<button class="post-content__button i3-r-i" type="button" aria-label="ui ux design">
-							UI/ UX Design
+							UI/UX Design
 						</button>
 
 						<div class="post-content__info">
@@ -1970,8 +2009,8 @@
 							rel="nofollow noopener noreferrer"
 							target="_blank"
 							aria-label="home"
-							>Home</a
-						>
+							>Home
+						</a>
 
 						<a
 							class="footer-content__href i5-r-l"
@@ -2033,7 +2072,7 @@
 
 						<a
 							class="footer-content__href i5-r-l"
-							href="mailto:Portfolio-jcrea.com"
+							href="mailto:Portfolio-jcrea@gmail.com"
 							rel="nofollow noopener noreferrer"
 							target="_blank"
 							aria-label="site"
@@ -2078,10 +2117,11 @@
 				<div class="footer-copyright">
 					<p class="i3-r-l" data-aos="fade-right">Copyright© 2023 Jayesh. All Rights Reserved.</p>
 
-					<p class="i3-r-l" data-aos="fade-left">User Terms & Conditions | Privaasync="false"cy Policy</p>
+					<p class="i3-r-l" data-aos="fade-left">User Terms & Conditions | Privacy Policy</p>
 				</div>
 			</div>
 		</footer>
+
 		<script>
 			(function () {
 				const script = document.createElement('script');
@@ -2093,9 +2133,18 @@
 				document.body.appendChild(script);
 			})();
 		</script>
+
 		<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 		<script>
 			const swiper = new Swiper('.swiper', {
+				slidesPerView: 1,
+				centeredSlides: true,
+				initialSlide: 1,
+				spaceBetween: 24,
+				grabCursor: true,
+			});
+
+			const swiperServices = new Swiper('.swiper-services', {
 				slidesPerView: 1,
 				centeredSlides: true,
 				initialSlide: 1,
