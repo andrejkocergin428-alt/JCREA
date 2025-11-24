@@ -3,6 +3,10 @@
   overflow: hidden;
 }
 
+.section-results .swiper {
+  overflow: visible;
+}
+
 .results-header {
   position: relative;
   display: flex;
@@ -38,14 +42,6 @@
   transform: rotate(-40deg);
 }
 
-.results-cards {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  overflow: hidden;
-  gap: 24px;
-}
-
 .results-card {
   display: flex;
   flex-direction: column;
@@ -56,9 +52,6 @@
   border: 2px solid var(--color-cards-border);
   border-radius: 24px;
   color: var(--color-white);
-  min-width: 780px;
-  min-height: 265px;
-  gap: 14px;
   cursor: pointer;
 }
 
