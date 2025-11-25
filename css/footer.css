@@ -105,6 +105,7 @@ footer {
   padding: 10px;
   border: none;
   outline: none;
+  transition: 0.3s all;
 }
 
 .footer-content__button {
@@ -142,6 +143,14 @@ footer {
 
 .footer-content__container:first-child {
   justify-content: space-between;
+}
+
+label:has(.footer-content__button:active) input:invalid {
+  background: var(--color-invalid);
+}
+
+label:has(.footer-content__button:active) input:valid {
+  background: var(--color-valid);
 }
 
 @media (max-width:768px) {

@@ -19,4 +19,6 @@
   --color-footer-line: #475467;
   --color-chain-circle: #1D2939;
   --color-cross: #E4E7EC;
+  --color-valid: rgb(143, 239, 144);
+  --color-invalid: rgb(239, 154, 154);
 }
