@@ -33,6 +33,11 @@ a {
   overflow: visible;
 }
 
+.swiper-services {
+  overflow: visible;
+  width: 100%;
+}
+
 @media (max-width: 768px) {
   .container-main {
     padding: 0 20px;

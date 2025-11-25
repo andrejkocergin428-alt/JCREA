@@ -195,6 +195,11 @@
   width: 0;
 }
 
+.ui-card__box {
+  display: flex;
+  flex-direction: row;
+}
+
 @media (max-width: 768px) {
   .ui-card__arrow {
     width: 60px;
