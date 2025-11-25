@@ -17,6 +17,10 @@ footer {
   align-items: center;
 }
 
+.footer-apex input {
+  display: none;
+}
+
 .footer-line {
   border: 1px solid var(--color-footer-line);
   width: 100%;
@@ -40,6 +44,7 @@ footer {
 }
 
 .footer-logo {
+  width: max-content;
   display: flex;
   flex-direction: row;
   align-items: center;
