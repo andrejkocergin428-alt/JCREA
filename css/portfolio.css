@@ -16,7 +16,7 @@
   color: var(--color-title);
 }
 
-.portfolio-main__cards {
+.swiper-wrapper .portfolio-main__cards {
   display: flex;
   flex-direction: row;
   gap: 24px;
@@ -88,6 +88,31 @@
 
 .portfolio-card:hover .card-description__subtitle {
   opacity: 1;
+}
+
+.swiper-pagination__portfolio {
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.swiper-pagination__portfolio .swiper-pagination-bullet {
+  cursor: pointer;
+  border: solid transparent;
+  color: var(--color-pagination-bullet);
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: var(--color-pagination-bullet);
+  transition: 0.4s all;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 60px;
+  background-color: var(--color-main);
+  border-radius: 10px;
 }
 
 .portfolio-footer {
